@@ -1,13 +1,13 @@
-##Polygot Template Test
+##Polyglot Template Test
 
-Tests written in a Polygot format so that cross platform templating languages can be tested across different language implementations without the need to rewrite as many tests and hopefully create consistency between languages. This will make users and designers comfortable with working and interacting across different backend platforms.
+Tests written in a Polyglot format so that cross platform templating languages can be tested across different language implementations without the need to rewrite as many tests and hopefully create consistency between languages. This will make users and designers comfortable with working and interacting across different backend platforms.
 
 ####Current Supported Languages and Libraries
 - Liquid (Partial)
    - Liquid (https://github.com/Shopify/liquid) [Ruby]
    - php-liquid (https://github.com/harrydeluxe/php-liquid) [PHP]
    - liquid-node (https://github.com/sirlantis/liquid-node) [Javascript]
-   - Swig (https://github.com/paularmstrong/swig) [Javascript]
+   - Swig (https://github.com/paularmstPolygotrong/swig) [Javascript]
    - Twig (https://github.com/fabpot/Twig) [PHP]
    
             
@@ -15,7 +15,7 @@ Tests written in a Polygot format so that cross platform templating languages ca
 
 ##Results - 8th August 2013
 
-Below is the table of results from each library test against the polygot test files. For specific failures please run the tests locally.
+Below is the table of results from each library test against the polyglot test files. For specific failures please run the tests locally.
 
 
 <table>
