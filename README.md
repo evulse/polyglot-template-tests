@@ -81,7 +81,7 @@ Below is the table of results from each library test against the polygot test fi
 - ~~tags/break_tag_test.rb~~
 - ~~tags/continue_tag_test.rb~~
 - ~~tags/for_tag_test.rb~~
-- tags/html_tag_test.rb
+- ~~tags/html_tag_test.rb~~
 - tags/if_else_tag_test.rb
 - tags/include_tag_test.rb
 - tags/increment_tag_test.rb
