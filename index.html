@@ -1,0 +1,902 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        <style>
+        body {
+            background: #f8f8f8;
+        }
+        </style>
+
+  </head>
+  <body>
+
+    <div class="container">
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>Polyglot Template Test</h1>
+        <p class="lead">Tests written in a Polyglot format so that cross platform templating languages can be tested across different language implementations without the need to rewrite as many tests and hopefully create consistency between languages. This will make users and designers comfortable with working and interacting across different backend platforms.</p>
+      </div>
+
+<div class="col-lg-12">
+            <h2>Results - Liquid</h2>
+            <p>Results of each Liquid library against the Liquid tests.</p>
+<div class="panel">
+  <div class="panel-body">
+                <h1>Tags</h1>
+                        <h2>Break</h2>
+              
+           
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Test</th>
+            <th>Template</th>
+            <th>Data</th>
+            <th style="width:50px;">liquid</th>
+            <th style="width:50px;">liquid-node</th>
+            <th style="width:50px;">php-liquid</th>
+            <th style="width:50px;">swig</th>
+            <th style="width:50px;">twig</th>
+        </tr>
+    </thead>
+    <tbody>
+                                        <tr>
+            <td>Test_break_with_no_block</td>
+            <td>{% break %}</td>
+            <td>[{"i":1}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                    </tbody>
+
+</table>
+                 
+           
+                <h2>Continue</h2>
+              
+           
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Test</th>
+            <th>Template</th>
+            <th>Data</th>
+            <th style="width:50px;">liquid</th>
+            <th style="width:50px;">liquid-node</th>
+            <th style="width:50px;">php-liquid</th>
+            <th style="width:50px;">swig</th>
+            <th style="width:50px;">twig</th>
+        </tr>
+    </thead>
+    <tbody>
+                                        <tr>
+            <td>Test_continue_with_no_block</td>
+            <td>{% continue %}</td>
+            <td>[{}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                    </tbody>
+
+</table>
+                 
+           
+                <h2>For</h2>
+              
+           
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Test</th>
+            <th>Template</th>
+            <th>Data</th>
+            <th style="width:50px;">liquid</th>
+            <th style="width:50px;">liquid-node</th>
+            <th style="width:50px;">php-liquid</th>
+            <th style="width:50px;">swig</th>
+            <th style="width:50px;">twig</th>
+        </tr>
+    </thead>
+    <tbody>
+                                        <tr>
+            <td>Test_bad_variable_naming_in_for_loop</td>
+            <td>{% for a/b in x %}{% endfor %}</td>
+            <td>[{}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_blank_string_not_iterable</td>
+            <td>{% for char in characters %}I WILL NOT BE OUTPUT{% endfor %}</td>
+            <td>[{"characters":""}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_dynamic_variable_limiting</td>
+            <td>{%for i in array limit: limit offset: offset %}{{ i }}{%endfor%}</td>
+            <td>[{"array":[1,2,3,4,5,6,7,8,9,0],"limit":2,"offset":2}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for</td>
+            <td>{%for item in array%} yo {%endfor%}</td>
+            <td>[{"array": [1,2,3,4]},{"array": [1,2]},{"array": [1]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+        </tr>
+
+                          <tr>
+            <td>Test_for</td>
+            <td>{%for item in array%} yo {%endfor%}</td>
+            <td>[{"array": [1,2,3,4]},{"array": [1,2]},{"array": [1]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+        </tr>
+
+                          <tr>
+            <td>Test_for</td>
+            <td>{%for item in array%} yo {%endfor%}</td>
+            <td>[{"array": [1,2,3,4]},{"array": [1,2]},{"array": [1]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for2</td>
+            <td>{%for item in array%}{%endfor%}</td>
+            <td>[{"array":[1,2]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for3</td>
+            <td>{%for item in array%}<br />
+    yo<br />
+{%endfor%}<br />
+</td>
+            <td>[{"array":[1,2,3]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_and_if</td>
+            <td>{%for item in array%}{% if forloop.first %}+{% else %}-{% endif %}{%endfor%}</td>
+            <td>[{"array":[1,2,3]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_else</td>
+            <td>{%for item in array%}+{%else%}-{%endfor%}</td>
+            <td>[{"array":[1,2,3]},{"array":[]},{"array":null}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+        </tr>
+
+                          <tr>
+            <td>Test_for_else</td>
+            <td>{%for item in array%}+{%else%}-{%endfor%}</td>
+            <td>[{"array":[1,2,3]},{"array":[]},{"array":null}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+        </tr>
+
+                          <tr>
+            <td>Test_for_else</td>
+            <td>{%for item in array%}+{%else%}-{%endfor%}</td>
+            <td>[{"array":[1,2,3]},{"array":[]},{"array":null}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_helpers</td>
+            <td>{%for item in array%} {{forloop.index}}/{{forloop.length}} {%endfor%}</td>
+            <td>[{"array":[1,2,3]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_helpers2</td>
+            <td>{%for item in array%} {{forloop.index}} {%endfor%}</td>
+            <td>[{"array":[1,2,3]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_helpers3</td>
+            <td>{%for item in array%} {{forloop.index0}} {%endfor%}</td>
+            <td>[{"array":[1,2,3]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_helpers4</td>
+            <td>{%for item in array%} {{forloop.rindex0}} {%endfor%}</td>
+            <td>[{"array":[1,2,3]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_helpers5</td>
+            <td>{%for item in array%} {{forloop.rindex}} {%endfor%}</td>
+            <td>[{"array":[1,2,3]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_helpers6</td>
+            <td>{%for item in array%} {{forloop.first}} {%endfor%}</td>
+            <td>[{"array":[1,2,3]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_helpers7</td>
+            <td>{%for item in array%} {{forloop.last}} {%endfor%}</td>
+            <td>[{"array":[1,2,3]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_reversed</td>
+            <td>{%for item in array reversed %}{{item}}{%endfor%}</td>
+            <td>[{"array":[1,2,3]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_tag_string</td>
+            <td>{%for val in string%}{{val}}{%endfor%}</td>
+            <td>[{"string":"test string"}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_tag_string2</td>
+            <td>{%for val in string limit:1%}{{val}}{%endfor%}</td>
+            <td>[{"string":"test string"}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_tag_string3</td>
+            <td>{%for val in string%}{{forloop.name}}-{{forloop.index}}-{{forloop.length}}-{{forloop.index0}}-{{forloop.rindex}}-{{forloop.rindex0}}-{{forloop.first}}-{{forloop.last}}-{{val}}{%endfor%}</td>
+            <td>[{"string":"test string"}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_with_break</td>
+            <td>{% for i in array.items %}{% break %}{% endfor %}</td>
+            <td>[{"array":{"items":[1,2,3,4,5,6,7,8,9,10]}}]<br />
+    </td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_with_break2</td>
+            <td>{% for i in array.items %}{{ i }}{% break %}{% endfor %}</td>
+            <td>[{"array":{"items":[1,2,3,4,5,6,7,8,9,10]}}]<br />
+    </td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_with_break3</td>
+            <td>{% for i in array.items %}{% break %}{{ i }}{% endfor %}</td>
+            <td>[{"array":{"items":[1,2,3,4,5,6,7,8,9,10]}}]<br />
+    </td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_with_break4</td>
+            <td>{% for i in array.items %}{{ i }}{% if i > 3 %}{% break %}{% endif %}{% endfor %}</td>
+            <td>[{"array":{"items":[1,2,3,4,5,6,7,8,9,10]}}]<br />
+    </td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_with_break5</td>
+            <td>{% for item in array %}{% for i in item %}{% if i == 1 %}{% break %}{% endif %}{{ i }}{% endfor %}{% endfor %}</td>
+            <td>[{"array":[[1,2],[3,4],[5,6]]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_with_break6</td>
+            <td>{% for i in array.items %}{% if i == 9999 %}{% break %}{% endif %}{{ i }}{% endfor %}</td>
+            <td>[{"array":{"items":[1,2,3,4,5]}}]<br />
+    </td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_with_continue</td>
+            <td>{% for i in array.items %}{% continue %}{% endfor %}</td>
+            <td>[{"array":{"items":[1,2,3,4,5]}}]<br />
+    </td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_with_continue2</td>
+            <td>{% for i in array.items %}{{ i }}{% continue %}{% endfor %}</td>
+            <td>[{"array":{"items":[1,2,3,4,5]}}]<br />
+    </td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_with_continue3</td>
+            <td>{% for i in array.items %}{% continue %}{{ i }}{% endfor %}</td>
+            <td>[{"array":{"items":[1,2,3,4,5]}}]<br />
+    </td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_with_continue4</td>
+            <td>{% for i in array.items %}{% if i > 3 %}{% continue %}{% endif %}{{ i }}{% endfor %}</td>
+            <td>[{"array":{"items":[1,2,3,4,5]}}]<br />
+    </td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_with_continue5</td>
+            <td>{% for i in array.items %}{% if i == 3 %}{% continue %}{% else %}{{ i }}{% endif %}{% endfor %}</td>
+            <td>[{"array":{"items":[1,2,3,4,5]}}]<br />
+    </td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_with_continue6</td>
+            <td>{% for item in array %}{% for i in item %}{% if i == 1 %}{% continue %}{% endif %}{{ i }}{% endfor %}{% endfor %}</td>
+            <td>[{"array":[[1,2],[3,4],[5,6]]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_with_continue7</td>
+            <td>{% for i in array.items %}{% if i == 9999 %}{% continue %}{% endif %}{{ i }}{% endfor %}</td>
+            <td>[{"array":{"items":[1,2,3,4,5]}}]<br />
+    </td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_with_range</td>
+            <td>{%for item in (1..3) %} {{item}} {%endfor%}</td>
+            <td>[{}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_with_variable</td>
+            <td>{%for item in array%} {{item}} {%endfor%}</td>
+            <td>[{"array":[1,2,3]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_for_with_variable2</td>
+            <td>{%for item in array%}{{item}}{%endfor%}</td>
+            <td>[<br />
+    {"array":[1,2,3]},<br />
+    {"array":[1,2,3]},<br />
+    {"array":["a","b","c","d"]},<br />
+    {"array":["a"," ","b"," ","c"]},<br />
+    {"array":["a","","b","","c"]}<br />
+]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+        </tr>
+
+                          <tr>
+            <td>Test_for_with_variable2</td>
+            <td>{%for item in array%}{{item}}{%endfor%}</td>
+            <td>[<br />
+    {"array":[1,2,3]},<br />
+    {"array":[1,2,3]},<br />
+    {"array":["a","b","c","d"]},<br />
+    {"array":["a"," ","b"," ","c"]},<br />
+    {"array":["a","","b","","c"]}<br />
+]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+        </tr>
+
+                          <tr>
+            <td>Test_for_with_variable2</td>
+            <td>{%for item in array%}{{item}}{%endfor%}</td>
+            <td>[<br />
+    {"array":[1,2,3]},<br />
+    {"array":[1,2,3]},<br />
+    {"array":["a","b","c","d"]},<br />
+    {"array":["a"," ","b"," ","c"]},<br />
+    {"array":["a","","b","","c"]}<br />
+]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+        </tr>
+
+                          <tr>
+            <td>Test_for_with_variable2</td>
+            <td>{%for item in array%}{{item}}{%endfor%}</td>
+            <td>[<br />
+    {"array":[1,2,3]},<br />
+    {"array":[1,2,3]},<br />
+    {"array":["a","b","c","d"]},<br />
+    {"array":["a"," ","b"," ","c"]},<br />
+    {"array":["a","","b","","c"]}<br />
+]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+        </tr>
+
+                          <tr>
+            <td>Test_for_with_variable2</td>
+            <td>{%for item in array%}{{item}}{%endfor%}</td>
+            <td>[<br />
+    {"array":[1,2,3]},<br />
+    {"array":[1,2,3]},<br />
+    {"array":["a","b","c","d"]},<br />
+    {"array":["a"," ","b"," ","c"]},<br />
+    {"array":["a","","b","","c"]}<br />
+]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_limiting</td>
+            <td>{%for i in array limit:2 %}{{ i }}{%endfor%}</td>
+            <td>[{"array":[1,2,3,4,5,6,7,8,9,0]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_limiting2</td>
+            <td>{%for i in array limit:4 %}{{ i }}{%endfor%}</td>
+            <td>[{"array":[1,2,3,4,5,6,7,8,9,0]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_limiting3</td>
+            <td>{%for i in array limit:4 offset:2 %}{{ i }}{%endfor%}</td>
+            <td>[{"array":[1,2,3,4,5,6,7,8,9,0]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_limiting4</td>
+            <td>{%for i in array limit: 4 offset: 2 %}{{ i }}{%endfor%}</td>
+            <td>[{"array":[1,2,3,4,5,6,7,8,9,0]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_nested_for</td>
+            <td>{%for item in array%}{%for i in item%}{{ i }}{%endfor%}{%endfor%}</td>
+            <td>[{"array":[[1,2],[3,4],[5,6]]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_offset_only</td>
+            <td>{%for i in array offset:7 %}{{ i }}{%endfor%}</td>
+            <td>[{"array":[1,2,3,4,5,6,7,8,9,0]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_pause_resume</td>
+            <td>{%for i in array.items limit: 3 %}{{i}}{%endfor%}<br />
+next<br />
+{%for i in array.items offset:continue limit: 3 %}{{i}}{%endfor%}<br />
+next<br />
+{%for i in array.items offset:continue limit: 3 %}{{i}}{%endfor%}</td>
+            <td>[{"array":{"items":[1,2,3,4,5,6,7,8,9,0]}}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_pause_resume_BIG_limit</td>
+            <td>{%for i in array.items limit:3 %}{{i}}{%endfor%}<br />
+next<br />
+{%for i in array.items offset:continue limit:3 %}{{i}}{%endfor%}<br />
+next<br />
+{%for i in array.items offset:continue limit:1000 %}{{i}}{%endfor%}</td>
+            <td>[{"array":{"items":[1,2,3,4,5,6,7,8,9,0]}}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_pause_resume_BIG_offset</td>
+            <td>{%for i in array.items limit:3 %}{{i}}{%endfor%}<br />
+next<br />
+{%for i in array.items offset:continue limit:3 %}{{i}}{%endfor%}<br />
+next<br />
+{%for i in array.items offset:continue limit:3 offset:1000 %}{{i}}{%endfor%}</td>
+            <td>[{"array":{"items":[1,2,3,4,5,6,7,8,9,0]}}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_pause_resume_limit</td>
+            <td>{%for i in array.items limit:3 %}{{i}}{%endfor%}<br />
+next<br />
+{%for i in array.items offset:continue limit:3 %}{{i}}{%endfor%}<br />
+next<br />
+{%for i in array.items offset:continue limit:1 %}{{i}}{%endfor%}</td>
+            <td>[{"array":{"items":[1,2,3,4,5,6,7,8,9,0]}}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_spacing_with_variable_naming_in_for_loop</td>
+            <td>{% for       item   in   items %}{{item}}{% endfor %}</td>
+            <td>[{"items":[1,2,3,4,5]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+        </tr>
+
+                                    </tbody>
+
+</table>
+                 
+           
+                <h2>Html</h2>
+              
+           
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Test</th>
+            <th>Template</th>
+            <th>Data</th>
+            <th style="width:50px;">liquid</th>
+            <th style="width:50px;">liquid-node</th>
+            <th style="width:50px;">php-liquid</th>
+            <th style="width:50px;">swig</th>
+            <th style="width:50px;">twig</th>
+        </tr>
+    </thead>
+    <tbody>
+                                        <tr>
+            <td>Test_enumerable_drop</td>
+            <td>{% tablerow n in numbers cols:3%} {{n}} {% endtablerow %}</td>
+            <td>[{"numbers":[1,2,3,4,5,6]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_html_col_counter</td>
+            <td>{% tablerow n in numbers cols:2%}{{tablerowloop.col}}{% endtablerow %}</td>
+            <td>[{"numbers":[1,2,3,4,5,6]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_html_table</td>
+            <td>{% tablerow n in numbers cols:3%} {{n}} {% endtablerow %}</td>
+            <td>[{"numbers":[1,2,3,4,5,6]},{"numbers":[]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                          <tr>
+            <td>Test_html_table</td>
+            <td>{% tablerow n in numbers cols:3%} {{n}} {% endtablerow %}</td>
+            <td>[{"numbers":[1,2,3,4,5,6]},{"numbers":[]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_html_table_with_different_cols</td>
+            <td>{% tablerow n in numbers cols:5%} {{n}} {% endtablerow %}</td>
+            <td>[{"numbers":[1,2,3,4,5,6]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_offset_and_limit</td>
+            <td>{% tablerow n in numbers cols:3 offset:1 limit:6%} {{n}} {% endtablerow %}</td>
+            <td>[{"numbers":[0,1,2,3,4,5,6,7]}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_quoted_fragment</td>
+            <td>{% tablerow n in collections.frontpage cols:3%} {{n}} {% endtablerow %}</td>
+            <td>[{"collections":{"frontpage":[1,2,3,4,5,6]}}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                                          <tr>
+            <td>Test_quoted_fragment2</td>
+            <td>{% tablerow n in collections['frontpage'] cols:3%} {{n}} {% endtablerow %}</td>
+            <td>[{"collections":{"frontpage":[1,2,3,4,5,6]}}]</td>
+            <td><span class="label label-success">Pass</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+            <td><span class="label label-danger">Fail</span></td>
+        </tr>
+
+                                    </tbody>
+
+</table>
+                 
+           
+                </div>
+</div>
+        </div>
+
+      <!-- Site footer -->
+      <div class="footer">
+        <p>&copy; Michael Angell 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
+

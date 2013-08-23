@@ -19,8 +19,8 @@ describe('Liquid', function(){
                         if (err) {
                             return console.log(err);
                         }
-                        describe(path.dirname(filename)+'/'+(index+1)+'.html', function(){
-                            it('Test', function(done){
+                        describe('Test', function(){
+                            it(path.dirname(filename)+'/'+(index+1)+'.html', function(done){
                                 liquid.Template.parse(template).render(item).done(function(n) {
                                     assert.equal(n, result);
                                     done()

@@ -1,5 +1,6 @@
 require "test/unit"
 require "json"
+require "test/unit/runner/tap"
 require "liquid"
 
    assertTest = Struct.new :name, :expected, :template, :data
@@ -11,7 +12,7 @@ require "liquid"
      data = JSON.parse(dataFile.read)
      data.to_enum.with_index(1) { |d, i|
        polygotTest = assertTest.new
-       polygotTest.name = "test_"+File.dirname(f)+i.to_s
+       polygotTest.name = "test_"+File.dirname(f)+"/"+i.to_s+".html"
        templateFile = File.open(File.dirname(f)+'/template.liquid', "rb")
        polygotTest.template = templateFile.read
        templateFile.close

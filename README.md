@@ -7,67 +7,20 @@ Tests written in a Polyglot format so that cross platform templating languages c
    - Liquid (https://github.com/Shopify/liquid) [Ruby]
    - php-liquid (https://github.com/harrydeluxe/php-liquid) [PHP]
    - liquid-node (https://github.com/sirlantis/liquid-node) [Javascript]
-   - Swig (https://github.com/paularmstPolygotrong/swig) [Javascript]
+   - Swig (https://github.com/paularmstrong/swig) [Javascript]
    - Twig (https://github.com/fabpot/Twig) [PHP]
-   
-            
 
+##Results
 
-##Results - 8th August 2013
+Results are now available at http://evulse.github.io/polyglot-template-tests/
 
-Below is the table of results from each library test against the polyglot test files. For specific failures please run the tests locally.
+##Running Tests
 
+Tests should now be run by using `php run_tests.php` from the root directory. This was a quick solution. All dependencies need to be installed beforehand.
 
-<table>
-  <tr>
-    <th>Project</th>
-    <th>Language</th>
-    <th>Test</th>
-    <th>Pass</th>
-    <th>Fail</th>
-    <th>Coverage</th>
-  </tr>
-  <tr>
-    <td>Liquid</td>
-    <td>Ruby</td>
-    <td>Liquid</td>
-    <td>56</td>
-    <td>0</td>
-    <td>100%</td>
-  </tr>
-  <tr>
-    <td>php-liquid</td>
-    <td>PHP</td>
-    <td>Liquid</td>
-    <td>31</td>
-    <td>25</td>
-    <td>55%</td>
-  </tr>
-  <tr>
-    <td>liquid-node</td>
-    <td>Javascript</td>
-    <td>Liquid</td>
-    <td>18</td>
-    <td>38</td>
-    <td>32%</td>
-  </tr>
-  <tr>
-    <td>Swig</td>
-    <td>Javascript</td>
-    <td>Liquid</td>
-    <td>14</td>
-    <td>42</td>
-    <td>25%</td>
-  </tr>
-  <tr>
-    <td>Twig</td>
-    <td>PHP</td>
-    <td>Liquid</td>
-    <td>17</td>
-    <td>39</td>
-    <td>30%</td>
-  </tr>
-</table>
+##Building Report
+
+The report can be built after running tests with the command `php generate_report.php`. This was a quick solution.
 
 ##TO DO
 
@@ -116,9 +69,9 @@ Below is the table of results from each library test against the polyglot test f
 - Find a generic method to handle Exception testing.
 - Find a generic method to handle Closures/Anonymous Functions.
 - Write Generic Loader Libraries instead of current simple test scripts.
-- Bring Test Results in to a Central Application/GUI.
-- Report Table should show which syntax is valid/invalid for each implementation.
-- Auto Build results page and publish to Github Pages.
+- ~~Bring Test Results in to a Central Application/GUI.~~
+- ~~Report Table should show which syntax is valid/invalid for each implementation.~~
+- ~~Auto Build results page and publish to Github Pages.~~
 - Auto Pull Latest Version of Each Library on Test Run.
 
 

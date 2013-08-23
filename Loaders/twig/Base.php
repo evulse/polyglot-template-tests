@@ -43,7 +43,7 @@ class TwigBase extends PHPUnit_Framework_TestCase
             $template = file_get_contents($file->getPath().'/template'.$this->fileFormat);
             foreach($test as $key=>$value) {
                 $output = array($value, file_get_contents($file->getPath().'/'.($key+1).'.html'));
-                $tests[] = array(str_replace($testDir.'/', '', $file), $message, $template, $output);
+                $tests[str_replace($testDir.'/', '', $file->getPath().'/'.($key+1).'.html')] = array(str_replace($testDir.'/', '', $file), $message, $template, $output);
             }
 
             

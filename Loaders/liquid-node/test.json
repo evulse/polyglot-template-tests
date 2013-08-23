@@ -1,0 +1,6 @@
+{
+    "directory": "liquid-node",
+    "command": "mocha --reporter json > %s",
+    "resultType": "json",
+    "normalise": "processJS"
+}

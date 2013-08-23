@@ -1,0 +1,1270 @@
+{
+    "event": "suiteStart",
+    "suite": "PHP Liquid Test Suite",
+    "tests": 64
+}{
+    "event": "suiteStart",
+    "suite": "PHPLiquidTest",
+    "tests": 64
+}{
+    "event": "suiteStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "tests": 64
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #0 ('tags\/break_tag_test\/test_break_with_no_block\/data.json', 'Test', '{% break %}', array(array(1), ''))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #0 ('tags\/break_tag_test\/test_break_with_no_block\/data.json', 'Test', '{% break %}', array(array(1), ''))",
+    "status": "fail",
+    "time": 0.00579190254211,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "",
+                "LiquidException: Unkown tag break",
+                "Test (in tags\/break_tag_test\/test_break_with_no_block\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/break_tag_test\/test_break_with_no_block\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #1 ('tags\/continue_tag_test\/test_continue_with_no_block\/data.json', 'Test', '{% continue %}', array(array(), ''))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #1 ('tags\/continue_tag_test\/test_continue_with_no_block\/data.json', 'Test', '{% continue %}', array(array(), ''))",
+    "status": "fail",
+    "time": 0.00053882598877,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "",
+                "LiquidException: Unkown tag continue",
+                "Test (in tags\/continue_tag_test\/test_continue_with_no_block\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/continue_tag_test\/test_continue_with_no_block\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #2 ('tags\/for_tag_test\/test_bad_variable_naming_in_for_loop\/data.json', 'Test', '{% for a\/b in x %}{% endfor %}', array(array(), ''))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #2 ('tags\/for_tag_test\/test_bad_variable_naming_in_for_loop\/data.json', 'Test', '{% for a\/b in x %}{% endfor %}', array(array(), ''))",
+    "status": "pass",
+    "time": 0.00245499610901,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #3 ('tags\/for_tag_test\/test_blank_string_not_iterable\/data.json', 'Test', '{% for char in characters %}I WILL NOT BE OUTPUT{% endfor %}', array(array(''), ''))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #3 ('tags\/for_tag_test\/test_blank_string_not_iterable\/data.json', 'Test', '{% for char in characters %}I WILL NOT BE OUTPUT{% endfor %}', array(array(''), ''))",
+    "status": "pass",
+    "time": 0.000370025634766,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #4 ('tags\/for_tag_test\/test_dynamic_variable_limiting\/data.json', 'Test', '{%for i in array limit: limit offset: offset %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0), 2, 2), '34'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #4 ('tags\/for_tag_test\/test_dynamic_variable_limiting\/data.json', 'Test', '{%for i in array limit: limit offset: offset %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0), 2, 2), '34'))",
+    "status": "pass",
+    "time": 0.000967979431152,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #5 ('tags\/for_tag_test\/test_for\/data.json', 'Test', '{%for item in array%} yo {%endfor%}', array(array(array(1, 2, 3, 4)), ' yo  yo  yo  yo '))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #5 ('tags\/for_tag_test\/test_for\/data.json', 'Test', '{%for item in array%} yo {%endfor%}', array(array(array(1, 2, 3, 4)), ' yo  yo  yo  yo '))",
+    "status": "pass",
+    "time": 0.00034499168396,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #6 ('tags\/for_tag_test\/test_for\/data.json', 'Test', '{%for item in array%} yo {%endfor%}', array(array(array(1, 2)), ' yo  yo '))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #6 ('tags\/for_tag_test\/test_for\/data.json', 'Test', '{%for item in array%} yo {%endfor%}', array(array(array(1, 2)), ' yo  yo '))",
+    "status": "pass",
+    "time": 0.000319004058838,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #7 ('tags\/for_tag_test\/test_for\/data.json', 'Test', '{%for item in array%} yo {%endfor%}', array(array(array(1)), ' yo '))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #7 ('tags\/for_tag_test\/test_for\/data.json', 'Test', '{%for item in array%} yo {%endfor%}', array(array(array(1)), ' yo '))",
+    "status": "pass",
+    "time": 0.00032114982605,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #8 ('tags\/for_tag_test\/test_for2\/data.json', 'Test', '{%for item in array%}{%endfor%}', array(array(array(1, 2)), ''))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #8 ('tags\/for_tag_test\/test_for2\/data.json', 'Test', '{%for item in array%}{%endfor%}', array(array(array(1, 2)), ''))",
+    "status": "pass",
+    "time": 0.00032901763916,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #9 ('tags\/for_tag_test\/test_for3\/data.json', 'Test', '{%for item in array%}\n    yo\n{%endfor%}\n', array(array(array(1, 2, 3)), '\n    yo\n\n    yo\n\n    yo\n\n'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #9 ('tags\/for_tag_test\/test_for3\/data.json', 'Test', '{%for item in array%}\n    yo\n{%endfor%}\n', array(array(array(1, 2, 3)), '\n    yo\n\n    yo\n\n    yo\n\n'))",
+    "status": "pass",
+    "time": 0.000359058380127,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #10 ('tags\/for_tag_test\/test_for_and_if\/data.json', 'Test', '{%for item in array%}{% if forloop.first %}+{% else %}-{% endif %}{%endfor%}', array(array(array(1, 2, 3)), '+--'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #10 ('tags\/for_tag_test\/test_for_and_if\/data.json', 'Test', '{%for item in array%}{% if forloop.first %}+{% else %}-{% endif %}{%endfor%}', array(array(array(1, 2, 3)), '+--'))",
+    "status": "pass",
+    "time": 0.00163698196411,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #11 ('tags\/for_tag_test\/test_for_else\/data.json', 'Test', '{%for item in array%}+{%else%}-{%endfor%}', array(array(array(1, 2, 3)), '+++'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #11 ('tags\/for_tag_test\/test_for_else\/data.json', 'Test', '{%for item in array%}+{%else%}-{%endfor%}', array(array(array(1, 2, 3)), '+++'))",
+    "status": "fail",
+    "time": 0.000515937805176,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "+++",
+                "LiquidException: for does not expect else tag",
+                "Test (in tags\/for_tag_test\/test_for_else\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_else\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #12 ('tags\/for_tag_test\/test_for_else\/data.json', 'Test', '{%for item in array%}+{%else%}-{%endfor%}', array(array(array()), '-'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #12 ('tags\/for_tag_test\/test_for_else\/data.json', 'Test', '{%for item in array%}+{%else%}-{%endfor%}', array(array(array()), '-'))",
+    "status": "fail",
+    "time": 0.00047779083252,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "-",
+                "LiquidException: for does not expect else tag",
+                "Test (in tags\/for_tag_test\/test_for_else\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_else\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #13 ('tags\/for_tag_test\/test_for_else\/data.json', 'Test', '{%for item in array%}+{%else%}-{%endfor%}', array(array(NULL), '-'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #13 ('tags\/for_tag_test\/test_for_else\/data.json', 'Test', '{%for item in array%}+{%else%}-{%endfor%}', array(array(NULL), '-'))",
+    "status": "fail",
+    "time": 0.000514030456543,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "-",
+                "LiquidException: for does not expect else tag",
+                "Test (in tags\/for_tag_test\/test_for_else\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_else\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #14 ('tags\/for_tag_test\/test_for_helpers\/data.json', 'Test', '{%for item in array%} {{forloop.index}}\/{{forloop.length}} {%endfor%}', array(array(array(1, 2, 3)), ' 1\/3  2\/3  3\/3 '))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #14 ('tags\/for_tag_test\/test_for_helpers\/data.json', 'Test', '{%for item in array%} {{forloop.index}}\/{{forloop.length}} {%endfor%}', array(array(array(1, 2, 3)), ' 1\/3  2\/3  3\/3 '))",
+    "status": "pass",
+    "time": 0.000615835189819,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #15 ('tags\/for_tag_test\/test_for_helpers2\/data.json', 'Test', '{%for item in array%} {{forloop.index}} {%endfor%}', array(array(array(1, 2, 3)), ' 1  2  3 '))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #15 ('tags\/for_tag_test\/test_for_helpers2\/data.json', 'Test', '{%for item in array%} {{forloop.index}} {%endfor%}', array(array(array(1, 2, 3)), ' 1  2  3 '))",
+    "status": "pass",
+    "time": 0.000452995300293,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #16 ('tags\/for_tag_test\/test_for_helpers3\/data.json', 'Test', '{%for item in array%} {{forloop.index0}} {%endfor%}', array(array(array(1, 2, 3)), ' 0  1  2 '))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #16 ('tags\/for_tag_test\/test_for_helpers3\/data.json', 'Test', '{%for item in array%} {{forloop.index0}} {%endfor%}', array(array(array(1, 2, 3)), ' 0  1  2 '))",
+    "status": "pass",
+    "time": 0.000443935394287,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #17 ('tags\/for_tag_test\/test_for_helpers4\/data.json', 'Test', '{%for item in array%} {{forloop.rindex0}} {%endfor%}', array(array(array(1, 2, 3)), ' 2  1  0 '))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #17 ('tags\/for_tag_test\/test_for_helpers4\/data.json', 'Test', '{%for item in array%} {{forloop.rindex0}} {%endfor%}', array(array(array(1, 2, 3)), ' 2  1  0 '))",
+    "status": "pass",
+    "time": 0.000484943389893,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #18 ('tags\/for_tag_test\/test_for_helpers5\/data.json', 'Test', '{%for item in array%} {{forloop.rindex}} {%endfor%}', array(array(array(1, 2, 3)), ' 3  2  1 '))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #18 ('tags\/for_tag_test\/test_for_helpers5\/data.json', 'Test', '{%for item in array%} {{forloop.rindex}} {%endfor%}', array(array(array(1, 2, 3)), ' 3  2  1 '))",
+    "status": "pass",
+    "time": 0.00046706199646,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #19 ('tags\/for_tag_test\/test_for_helpers6\/data.json', 'Test', '{%for item in array%} {{forloop.first}} {%endfor%}', array(array(array(1, 2, 3)), ' true  false  false '))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #19 ('tags\/for_tag_test\/test_for_helpers6\/data.json', 'Test', '{%for item in array%} {{forloop.first}} {%endfor%}', array(array(array(1, 2, 3)), ' true  false  false '))",
+    "status": "fail",
+    "time": 0.000653028488159,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                " true  false  false ",
+                " 1  0  0 ",
+                "Test (in tags\/for_tag_test\/test_for_helpers6\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_helpers6\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #20 ('tags\/for_tag_test\/test_for_helpers7\/data.json', 'Test', '{%for item in array%} {{forloop.last}} {%endfor%}', array(array(array(1, 2, 3)), ' false  false  true '))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #20 ('tags\/for_tag_test\/test_for_helpers7\/data.json', 'Test', '{%for item in array%} {{forloop.last}} {%endfor%}', array(array(array(1, 2, 3)), ' false  false  true '))",
+    "status": "fail",
+    "time": 0.000675916671753,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                " false  false  true ",
+                " 0  0  1 ",
+                "Test (in tags\/for_tag_test\/test_for_helpers7\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_helpers7\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #21 ('tags\/for_tag_test\/test_for_reversed\/data.json', 'Test', '{%for item in array reversed %}{{item}}{%endfor%}', array(array(array(1, 2, 3)), '321'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #21 ('tags\/for_tag_test\/test_for_reversed\/data.json', 'Test', '{%for item in array reversed %}{{item}}{%endfor%}', array(array(array(1, 2, 3)), '321'))",
+    "status": "fail",
+    "time": 0.000638961791992,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "321",
+                "123",
+                "Test (in tags\/for_tag_test\/test_for_reversed\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_reversed\/data.json)\nFailed asserting that '123' matches expected '321'.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #22 ('tags\/for_tag_test\/test_for_tag_string\/data.json', 'Test', '{%for val in string%}{{val}}{%endfor%}', array(array('test string'), 'test string'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #22 ('tags\/for_tag_test\/test_for_tag_string\/data.json', 'Test', '{%for val in string%}{{val}}{%endfor%}', array(array('test string'), 'test string'))",
+    "status": "fail",
+    "time": 0.000555992126465,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "test string",
+                "",
+                "Test (in tags\/for_tag_test\/test_for_tag_string\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_tag_string\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #23 ('tags\/for_tag_test\/test_for_tag_string2\/data.json', 'Test', '{%for val in string limit:1%}{{val}}{%endfor%}', array(array('test string'), 'test string'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #23 ('tags\/for_tag_test\/test_for_tag_string2\/data.json', 'Test', '{%for val in string limit:1%}{{val}}{%endfor%}', array(array('test string'), 'test string'))",
+    "status": "fail",
+    "time": 0.000523805618286,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "test string",
+                "",
+                "Test (in tags\/for_tag_test\/test_for_tag_string2\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_tag_string2\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #24 ('tags\/for_tag_test\/test_for_tag_string3\/data.json', 'Test', '{%for val in string%}{{forloop.name}}-{{forloop.index}}-{{forloop.length}}-{{forloop.index0}}-{{forloop.rindex}}-{{forloop.rindex0}}-{{forloop.first}}-{{forloop.last}}-{{val}}{%endfor%}', array(array('test string'), 'val-string-1-1-0-1-0-true-true-test string'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #24 ('tags\/for_tag_test\/test_for_tag_string3\/data.json', 'Test', '{%for val in string%}{{forloop.name}}-{{forloop.index}}-{{forloop.length}}-{{forloop.index0}}-{{forloop.rindex}}-{{forloop.rindex0}}-{{forloop.first}}-{{forloop.last}}-{{val}}{%endfor%}', array(array('test string'), 'val-string-1-1-0-1-0-true-true-test string'))",
+    "status": "fail",
+    "time": 0.000910043716431,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "val-string-1-1-0-1-0-true-true-test string",
+                "",
+                "Test (in tags\/for_tag_test\/test_for_tag_string3\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_tag_string3\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #25 ('tags\/for_tag_test\/test_for_with_break\/data.json', 'Test', '{% for i in array.items %}{% break %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))), ''))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #25 ('tags\/for_tag_test\/test_for_with_break\/data.json', 'Test', '{% for i in array.items %}{% break %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))), ''))",
+    "status": "fail",
+    "time": 0.000482797622681,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "",
+                "LiquidException: Unkown tag break",
+                "Test (in tags\/for_tag_test\/test_for_with_break\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_with_break\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #26 ('tags\/for_tag_test\/test_for_with_break2\/data.json', 'Test', '{% for i in array.items %}{{ i }}{% break %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))), '1'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #26 ('tags\/for_tag_test\/test_for_with_break2\/data.json', 'Test', '{% for i in array.items %}{{ i }}{% break %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))), '1'))",
+    "status": "fail",
+    "time": 0.000529050827026,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "1",
+                "LiquidException: Unkown tag break",
+                "Test (in tags\/for_tag_test\/test_for_with_break2\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_with_break2\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #27 ('tags\/for_tag_test\/test_for_with_break3\/data.json', 'Test', '{% for i in array.items %}{% break %}{{ i }}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))), ''))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #27 ('tags\/for_tag_test\/test_for_with_break3\/data.json', 'Test', '{% for i in array.items %}{% break %}{{ i }}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))), ''))",
+    "status": "fail",
+    "time": 0.000473976135254,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "",
+                "LiquidException: Unkown tag break",
+                "Test (in tags\/for_tag_test\/test_for_with_break3\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_with_break3\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #28 ('tags\/for_tag_test\/test_for_with_break4\/data.json', 'Test', '{% for i in array.items %}{{ i }}{% if i > 3 %}{% break %}{% endif %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))), '1234'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #28 ('tags\/for_tag_test\/test_for_with_break4\/data.json', 'Test', '{% for i in array.items %}{{ i }}{% if i > 3 %}{% break %}{% endif %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))), '1234'))",
+    "status": "fail",
+    "time": 0.000576972961426,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "1234",
+                "LiquidException: Unkown tag break",
+                "Test (in tags\/for_tag_test\/test_for_with_break4\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_with_break4\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #29 ('tags\/for_tag_test\/test_for_with_break5\/data.json', 'Test', '{% for item in array %}{% for i in item %}{% if i == 1 %}{% break %}{% endif %}{{ i }}{% endfor %}{% endfor %}', array(array(array(array(1, 2), array(3, 4), array(5, 6))), '3456'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #29 ('tags\/for_tag_test\/test_for_with_break5\/data.json', 'Test', '{% for item in array %}{% for i in item %}{% if i == 1 %}{% break %}{% endif %}{{ i }}{% endfor %}{% endfor %}', array(array(array(array(1, 2), array(3, 4), array(5, 6))), '3456'))",
+    "status": "fail",
+    "time": 0.000576972961426,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "3456",
+                "LiquidException: Unkown tag break",
+                "Test (in tags\/for_tag_test\/test_for_with_break5\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_with_break5\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #30 ('tags\/for_tag_test\/test_for_with_break6\/data.json', 'Test', '{% for i in array.items %}{% if i == 9999 %}{% break %}{% endif %}{{ i }}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), '12345'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #30 ('tags\/for_tag_test\/test_for_with_break6\/data.json', 'Test', '{% for i in array.items %}{% if i == 9999 %}{% break %}{% endif %}{{ i }}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), '12345'))",
+    "status": "fail",
+    "time": 0.000554800033569,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "12345",
+                "LiquidException: Unkown tag break",
+                "Test (in tags\/for_tag_test\/test_for_with_break6\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_with_break6\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #31 ('tags\/for_tag_test\/test_for_with_continue\/data.json', 'Test', '{% for i in array.items %}{% continue %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), ''))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #31 ('tags\/for_tag_test\/test_for_with_continue\/data.json', 'Test', '{% for i in array.items %}{% continue %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), ''))",
+    "status": "fail",
+    "time": 0.000489950180054,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "",
+                "LiquidException: Unkown tag continue",
+                "Test (in tags\/for_tag_test\/test_for_with_continue\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_with_continue\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #32 ('tags\/for_tag_test\/test_for_with_continue2\/data.json', 'Test', '{% for i in array.items %}{{ i }}{% continue %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), '12345'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #32 ('tags\/for_tag_test\/test_for_with_continue2\/data.json', 'Test', '{% for i in array.items %}{{ i }}{% continue %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), '12345'))",
+    "status": "fail",
+    "time": 0.000550031661987,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "12345",
+                "LiquidException: Unkown tag continue",
+                "Test (in tags\/for_tag_test\/test_for_with_continue2\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_with_continue2\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #33 ('tags\/for_tag_test\/test_for_with_continue3\/data.json', 'Test', '{% for i in array.items %}{% continue %}{{ i }}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), ''))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #33 ('tags\/for_tag_test\/test_for_with_continue3\/data.json', 'Test', '{% for i in array.items %}{% continue %}{{ i }}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), ''))",
+    "status": "fail",
+    "time": 0.000452995300293,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "",
+                "LiquidException: Unkown tag continue",
+                "Test (in tags\/for_tag_test\/test_for_with_continue3\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_with_continue3\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #34 ('tags\/for_tag_test\/test_for_with_continue4\/data.json', 'Test', '{% for i in array.items %}{% if i > 3 %}{% continue %}{% endif %}{{ i }}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), '123'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #34 ('tags\/for_tag_test\/test_for_with_continue4\/data.json', 'Test', '{% for i in array.items %}{% if i > 3 %}{% continue %}{% endif %}{{ i }}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), '123'))",
+    "status": "fail",
+    "time": 0.000595808029175,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "123",
+                "LiquidException: Unkown tag continue",
+                "Test (in tags\/for_tag_test\/test_for_with_continue4\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_with_continue4\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #35 ('tags\/for_tag_test\/test_for_with_continue5\/data.json', 'Test', '{% for i in array.items %}{% if i == 3 %}{% continue %}{% else %}{{ i }}{% endif %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), '1245'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #35 ('tags\/for_tag_test\/test_for_with_continue5\/data.json', 'Test', '{% for i in array.items %}{% if i == 3 %}{% continue %}{% else %}{{ i }}{% endif %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), '1245'))",
+    "status": "fail",
+    "time": 0.000592231750488,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "1245",
+                "LiquidException: Unkown tag continue",
+                "Test (in tags\/for_tag_test\/test_for_with_continue5\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_with_continue5\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #36 ('tags\/for_tag_test\/test_for_with_continue6\/data.json', 'Test', '{% for item in array %}{% for i in item %}{% if i == 1 %}{% continue %}{% endif %}{{ i }}{% endfor %}{% endfor %}', array(array(array(array(1, 2), array(3, 4), array(5, 6))), '23456'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #36 ('tags\/for_tag_test\/test_for_with_continue6\/data.json', 'Test', '{% for item in array %}{% for i in item %}{% if i == 1 %}{% continue %}{% endif %}{{ i }}{% endfor %}{% endfor %}', array(array(array(array(1, 2), array(3, 4), array(5, 6))), '23456'))",
+    "status": "fail",
+    "time": 0.000632047653198,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "23456",
+                "LiquidException: Unkown tag continue",
+                "Test (in tags\/for_tag_test\/test_for_with_continue6\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_with_continue6\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #37 ('tags\/for_tag_test\/test_for_with_continue7\/data.json', 'Test', '{% for i in array.items %}{% if i == 9999 %}{% continue %}{% endif %}{{ i }}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), '12345'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #37 ('tags\/for_tag_test\/test_for_with_continue7\/data.json', 'Test', '{% for i in array.items %}{% if i == 9999 %}{% continue %}{% endif %}{{ i }}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), '12345'))",
+    "status": "fail",
+    "time": 0.000543117523193,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "12345",
+                "LiquidException: Unkown tag continue",
+                "Test (in tags\/for_tag_test\/test_for_with_continue7\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_with_continue7\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #38 ('tags\/for_tag_test\/test_for_with_range\/data.json', 'Test', '{%for item in (1..3) %} {{item}} {%endfor%}', array(array(), ' 1  2  3 '))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #38 ('tags\/for_tag_test\/test_for_with_range\/data.json', 'Test', '{%for item in (1..3) %} {{item}} {%endfor%}', array(array(), ' 1  2  3 '))",
+    "status": "fail",
+    "time": 0.000559091567993,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                " 1  2  3 ",
+                "LiquidException: Syntax Error in 'for loop' - Valid syntax: for [item] in [collection]",
+                "Test (in tags\/for_tag_test\/test_for_with_range\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/for_tag_test\/test_for_with_range\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #39 ('tags\/for_tag_test\/test_for_with_variable\/data.json', 'Test', '{%for item in array%} {{item}} {%endfor%}', array(array(array(1, 2, 3)), ' 1  2  3 '))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #39 ('tags\/for_tag_test\/test_for_with_variable\/data.json', 'Test', '{%for item in array%} {{item}} {%endfor%}', array(array(array(1, 2, 3)), ' 1  2  3 '))",
+    "status": "pass",
+    "time": 0.000506162643433,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #40 ('tags\/for_tag_test\/test_for_with_variable2\/data.json', 'Test', '{%for item in array%}{{item}}{%endfor%}', array(array(array(1, 2, 3)), '123'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #40 ('tags\/for_tag_test\/test_for_with_variable2\/data.json', 'Test', '{%for item in array%}{{item}}{%endfor%}', array(array(array(1, 2, 3)), '123'))",
+    "status": "pass",
+    "time": 0.000447988510132,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #41 ('tags\/for_tag_test\/test_for_with_variable2\/data.json', 'Test', '{%for item in array%}{{item}}{%endfor%}', array(array(array(1, 2, 3)), '123'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #41 ('tags\/for_tag_test\/test_for_with_variable2\/data.json', 'Test', '{%for item in array%}{{item}}{%endfor%}', array(array(array(1, 2, 3)), '123'))",
+    "status": "pass",
+    "time": 0.000443935394287,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #42 ('tags\/for_tag_test\/test_for_with_variable2\/data.json', 'Test', '{%for item in array%}{{item}}{%endfor%}', array(array(array('a', 'b', 'c', 'd')), 'abcd'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #42 ('tags\/for_tag_test\/test_for_with_variable2\/data.json', 'Test', '{%for item in array%}{{item}}{%endfor%}', array(array(array('a', 'b', 'c', 'd')), 'abcd'))",
+    "status": "pass",
+    "time": 0.000470161437988,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #43 ('tags\/for_tag_test\/test_for_with_variable2\/data.json', 'Test', '{%for item in array%}{{item}}{%endfor%}', array(array(array('a', ' ', 'b', ' ', 'c')), 'a b c'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #43 ('tags\/for_tag_test\/test_for_with_variable2\/data.json', 'Test', '{%for item in array%}{{item}}{%endfor%}', array(array(array('a', ' ', 'b', ' ', 'c')), 'a b c'))",
+    "status": "pass",
+    "time": 0.000509977340698,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #44 ('tags\/for_tag_test\/test_for_with_variable2\/data.json', 'Test', '{%for item in array%}{{item}}{%endfor%}', array(array(array('a', '', 'b', '', 'c')), 'abc'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #44 ('tags\/for_tag_test\/test_for_with_variable2\/data.json', 'Test', '{%for item in array%}{{item}}{%endfor%}', array(array(array('a', '', 'b', '', 'c')), 'abc'))",
+    "status": "pass",
+    "time": 0.000494956970215,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #45 ('tags\/for_tag_test\/test_limiting\/data.json', 'Test', '{%for i in array limit:2 %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)), '12'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #45 ('tags\/for_tag_test\/test_limiting\/data.json', 'Test', '{%for i in array limit:2 %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)), '12'))",
+    "status": "pass",
+    "time": 0.000445127487183,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #46 ('tags\/for_tag_test\/test_limiting2\/data.json', 'Test', '{%for i in array limit:4 %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)), '1234'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #46 ('tags\/for_tag_test\/test_limiting2\/data.json', 'Test', '{%for i in array limit:4 %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)), '1234'))",
+    "status": "pass",
+    "time": 0.000494956970215,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #47 ('tags\/for_tag_test\/test_limiting3\/data.json', 'Test', '{%for i in array limit:4 offset:2 %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)), '3456'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #47 ('tags\/for_tag_test\/test_limiting3\/data.json', 'Test', '{%for i in array limit:4 offset:2 %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)), '3456'))",
+    "status": "pass",
+    "time": 0.000509023666382,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #48 ('tags\/for_tag_test\/test_limiting4\/data.json', 'Test', '{%for i in array limit: 4 offset: 2 %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)), '3456'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #48 ('tags\/for_tag_test\/test_limiting4\/data.json', 'Test', '{%for i in array limit: 4 offset: 2 %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)), '3456'))",
+    "status": "pass",
+    "time": 0.000500917434692,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #49 ('tags\/for_tag_test\/test_nested_for\/data.json', 'Test', '{%for item in array%}{%for i in item%}{{ i }}{%endfor%}{%endfor%}', array(array(array(array(1, 2), array(3, 4), array(5, 6))), '123456'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #49 ('tags\/for_tag_test\/test_nested_for\/data.json', 'Test', '{%for item in array%}{%for i in item%}{{ i }}{%endfor%}{%endfor%}', array(array(array(array(1, 2), array(3, 4), array(5, 6))), '123456'))",
+    "status": "pass",
+    "time": 0.000726222991943,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #50 ('tags\/for_tag_test\/test_offset_only\/data.json', 'Test', '{%for i in array offset:7 %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)), '890'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #50 ('tags\/for_tag_test\/test_offset_only\/data.json', 'Test', '{%for i in array offset:7 %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)), '890'))",
+    "status": "pass",
+    "time": 0.000478029251099,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #51 ('tags\/for_tag_test\/test_pause_resume\/data.json', 'Test', '{%for i in array.items limit: 3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit: 3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit: 3 %}{{i}}{%endfor%}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0))), '123\nnext\n456\nnext\n789'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #51 ('tags\/for_tag_test\/test_pause_resume\/data.json', 'Test', '{%for i in array.items limit: 3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit: 3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit: 3 %}{{i}}{%endfor%}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0))), '123\nnext\n456\nnext\n789'))",
+    "status": "pass",
+    "time": 0.00102591514587,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #52 ('tags\/for_tag_test\/test_pause_resume_BIG_limit\/data.json', 'Test', '{%for i in array.items limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:1000 %}{{i}}{%endfor%}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0))), '123\nnext\n456\nnext\n7890'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #52 ('tags\/for_tag_test\/test_pause_resume_BIG_limit\/data.json', 'Test', '{%for i in array.items limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:1000 %}{{i}}{%endfor%}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0))), '123\nnext\n456\nnext\n7890'))",
+    "status": "pass",
+    "time": 0.00101709365845,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #53 ('tags\/for_tag_test\/test_pause_resume_BIG_offset\/data.json', 'Test', '{%for i in array.items limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:3 offset:1000 %}{{i}}{%endfor%}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0))), '123\nnext\n456\nnext\n'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #53 ('tags\/for_tag_test\/test_pause_resume_BIG_offset\/data.json', 'Test', '{%for i in array.items limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:3 offset:1000 %}{{i}}{%endfor%}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0))), '123\nnext\n456\nnext\n'))",
+    "status": "pass",
+    "time": 0.000881910324097,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #54 ('tags\/for_tag_test\/test_pause_resume_limit\/data.json', 'Test', '{%for i in array.items limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:1 %}{{i}}{%endfor%}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0))), '123\nnext\n456\nnext\n7'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #54 ('tags\/for_tag_test\/test_pause_resume_limit\/data.json', 'Test', '{%for i in array.items limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:1 %}{{i}}{%endfor%}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0))), '123\nnext\n456\nnext\n7'))",
+    "status": "pass",
+    "time": 0.000997066497803,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #55 ('tags\/for_tag_test\/test_spacing_with_variable_naming_in_for_loop\/data.json', 'Test', '{% for       item   in   items %}{{item}}{% endfor %}', array(array(array(1, 2, 3, 4, 5)), '12345'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #55 ('tags\/for_tag_test\/test_spacing_with_variable_naming_in_for_loop\/data.json', 'Test', '{% for       item   in   items %}{{item}}{% endfor %}', array(array(array(1, 2, 3, 4, 5)), '12345'))",
+    "status": "pass",
+    "time": 0.000505924224854,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #56 ('tags\/html_tag_test\/test_enumerable_drop\/data.json', 'Test', '{% tablerow n in numbers cols:3%} {{n}} {% endtablerow %}', array(array(array(1, 2, 3, 4, 5, 6)), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #56 ('tags\/html_tag_test\/test_enumerable_drop\/data.json', 'Test', '{% tablerow n in numbers cols:3%} {{n}} {% endtablerow %}', array(array(array(1, 2, 3, 4, 5, 6)), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n'))",
+    "status": "pass",
+    "time": 0.00100302696228,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #57 ('tags\/html_tag_test\/test_html_col_counter\/data.json', 'Test', '{% tablerow n in numbers cols:2%}{{tablerowloop.col}}{% endtablerow %}', array(array(array(1, 2, 3, 4, 5, 6)), '<tr class=\"row1\">\n<td class=\"col1\">1<\/td><td class=\"col2\">2<\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\">1<\/td><td class=\"col2\">2<\/td><\/tr>\n<tr class=\"row3\"><td class=\"col1\">1<\/td><td class=\"col2\">2<\/td><\/tr>\n'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #57 ('tags\/html_tag_test\/test_html_col_counter\/data.json', 'Test', '{% tablerow n in numbers cols:2%}{{tablerowloop.col}}{% endtablerow %}', array(array(array(1, 2, 3, 4, 5, 6)), '<tr class=\"row1\">\n<td class=\"col1\">1<\/td><td class=\"col2\">2<\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\">1<\/td><td class=\"col2\">2<\/td><\/tr>\n<tr class=\"row3\"><td class=\"col1\">1<\/td><td class=\"col2\">2<\/td><\/tr>\n'))",
+    "status": "fail",
+    "time": 0.000788927078247,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "<tr class=\"row1\">\n<td class=\"col1\">1<\/td><td class=\"col2\">2<\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\">1<\/td><td class=\"col2\">2<\/td><\/tr>\n<tr class=\"row3\"><td class=\"col1\">1<\/td><td class=\"col2\">2<\/td><\/tr>\n",
+                "<tr class=\"row1\">\n<td class=\"col1\"><\/td><td class=\"col2\"><\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"><\/td><td class=\"col2\"><\/td><\/tr>\n<tr class=\"row3\"><td class=\"col1\"><\/td><td class=\"col2\"><\/td><\/tr>\n",
+                "Test (in tags\/html_tag_test\/test_html_col_counter\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/html_tag_test\/test_html_col_counter\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #58 ('tags\/html_tag_test\/test_html_table\/data.json', 'Test', '{% tablerow n in numbers cols:3%} {{n}} {% endtablerow %}', array(array(array(1, 2, 3, 4, 5, 6)), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #58 ('tags\/html_tag_test\/test_html_table\/data.json', 'Test', '{% tablerow n in numbers cols:3%} {{n}} {% endtablerow %}', array(array(array(1, 2, 3, 4, 5, 6)), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n'))",
+    "status": "pass",
+    "time": 0.000694990158081,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #59 ('tags\/html_tag_test\/test_html_table\/data.json', 'Test', '{% tablerow n in numbers cols:3%} {{n}} {% endtablerow %}', array(array(array()), '<tr class=\"row1\">\n<\/tr>\n'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #59 ('tags\/html_tag_test\/test_html_table\/data.json', 'Test', '{% tablerow n in numbers cols:3%} {{n}} {% endtablerow %}', array(array(array()), '<tr class=\"row1\">\n<\/tr>\n'))",
+    "status": "pass",
+    "time": 0.000437021255493,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #60 ('tags\/html_tag_test\/test_html_table_with_different_cols\/data.json', 'Test', '{% tablerow n in numbers cols:5%} {{n}} {% endtablerow %}', array(array(array(1, 2, 3, 4, 5, 6)), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><td class=\"col4\"> 4 <\/td><td class=\"col5\"> 5 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 6 <\/td><\/tr>\n'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #60 ('tags\/html_tag_test\/test_html_table_with_different_cols\/data.json', 'Test', '{% tablerow n in numbers cols:5%} {{n}} {% endtablerow %}', array(array(array(1, 2, 3, 4, 5, 6)), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><td class=\"col4\"> 4 <\/td><td class=\"col5\"> 5 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 6 <\/td><\/tr>\n'))",
+    "status": "pass",
+    "time": 0.000586986541748,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #61 ('tags\/html_tag_test\/test_offset_and_limit\/data.json', 'Test', '{% tablerow n in numbers cols:3 offset:1 limit:6%} {{n}} {% endtablerow %}', array(array(array(0, 1, 2, 3, 4, 5, 6, 7)), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #61 ('tags\/html_tag_test\/test_offset_and_limit\/data.json', 'Test', '{% tablerow n in numbers cols:3 offset:1 limit:6%} {{n}} {% endtablerow %}', array(array(array(0, 1, 2, 3, 4, 5, 6, 7)), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n'))",
+    "status": "pass",
+    "time": 0.000611066818237,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #62 ('tags\/html_tag_test\/test_quoted_fragment\/data.json', 'Test', '{% tablerow n in collections.frontpage cols:3%} {{n}} {% endtablerow %}', array(array(array(array(1, 2, 3, 4, 5, 6))), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #62 ('tags\/html_tag_test\/test_quoted_fragment\/data.json', 'Test', '{% tablerow n in collections.frontpage cols:3%} {{n}} {% endtablerow %}', array(array(array(array(1, 2, 3, 4, 5, 6))), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n'))",
+    "status": "pass",
+    "time": 0.000596046447754,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #63 ('tags\/html_tag_test\/test_quoted_fragment2\/data.json', 'Test', '{% tablerow n in collections[\\'frontpage\\'] cols:3%} {{n}} {% endtablerow %}', array(array(array(array(1, 2, 3, 4, 5, 6))), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n'))"
+}{
+    "event": "test",
+    "suite": "PHPLiquidTest::testAdd",
+    "test": "PHPLiquidTest::testAdd with data set #63 ('tags\/html_tag_test\/test_quoted_fragment2\/data.json', 'Test', '{% tablerow n in collections[\\'frontpage\\'] cols:3%} {{n}} {% endtablerow %}', array(array(array(array(1, 2, 3, 4, 5, 6))), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n'))",
+    "status": "fail",
+    "time": 0.000856876373291,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
+            "line": 25,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n",
+                "PHPUnit_Framework_Error_Notice: Array to string conversion",
+                "Test (in tags\/html_tag_test\/test_quoted_fragment2\/data.json)"
+            ]
+        }
+    ],
+    "message": "Test (in tags\/html_tag_test\/test_quoted_fragment2\/data.json)\nFailed asserting that two strings are equal.",
+    "output": ""
+}

@@ -17,8 +17,8 @@ describe('Liquid', function(){
                         if (err) {
                             return console.log(err);
                         }
-                        describe(path.dirname(filename)+'/'+(index+1)+'.html', function(){
-                            it('Test', function(done){
+                        describe('Test', function(){
+                            it(path.dirname(filename)+'/'+(index+1)+'.html', function(done){
                                 var tpl = swig.compile(template);
                                 var renderedHtml = tpl(item);
                                 assert.equal(renderedHtml, result);
