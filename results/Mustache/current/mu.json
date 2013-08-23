@@ -1,0 +1,358 @@
+{
+  "stats": {
+    "suites": 38,
+    "tests": 38,
+    "passes": 18,
+    "pending": 0,
+    "failures": 20,
+    "start": "2013-08-23T13:57:33.788Z",
+    "end": "2013-08-23T13:57:33.832Z",
+    "duration": 44
+  },
+  "tests": [
+    {
+      "title": "Always Pass",
+      "fullTitle": "Mustache Always Pass",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/ampersand_escape/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/ampersand_escape/1.html",
+      "duration": 2
+    },
+    {
+      "title": "../../test/Mustache/default/default/apostrophe/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/apostrophe/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/array_of_strings/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/array_of_strings/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/backslashes/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/backslashes/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/bug_11_eating_whitespace/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/bug_11_eating_whitespace/1.html",
+      "duration": 1
+    },
+    {
+      "title": "../../test/Mustache/default/default/changing_delimiters/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/changing_delimiters/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/context_lookup/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/context_lookup/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/delimiters/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/delimiters/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/disappearing_whitespace/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/disappearing_whitespace/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/double_render/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/double_render/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/empty_list/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/empty_list/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/empty_sections/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/empty_sections/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/empty_string/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/empty_string/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/empty_template/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/empty_template/1.html",
+      "duration": 1
+    },
+    {
+      "title": "../../test/Mustache/default/default/error_not_found/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/error_not_found/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/falsy/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/falsy/1.html",
+      "duration": 2
+    },
+    {
+      "title": "../../test/Mustache/default/default/grandparent_context/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/grandparent_context/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/included_tag/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/included_tag/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/inverted_section/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/inverted_section/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/keys_with_questionmarks/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/keys_with_questionmarks/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/malicious_template/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/malicious_template/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/multiline_comment/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/multiline_comment/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/nested_iterating/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/nested_iterating/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/nesting/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/nesting/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/nesting_same_name/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/nesting_same_name/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/null_view/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/null_view/1.html",
+      "duration": 1
+    },
+    {
+      "title": "../../test/Mustache/default/default/partial_array/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/partial_array/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/partial_array_of_partials/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/partial_array_of_partials/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/partial_array_of_partials_implicit/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/partial_array_of_partials_implicit/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/partial_empty/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/partial_empty/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/recursion_with_same_names/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/recursion_with_same_names/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/reuse_of_enumerables/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/reuse_of_enumerables/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/section_as_context/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/section_as_context/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/string_as_context/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/string_as_context/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/two_in_a_row/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/two_in_a_row/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/two_sections/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/two_sections/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/whitespace/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/whitespace/1.html",
+      "duration": 1
+    }
+  ],
+  "failures": [
+    {
+      "title": "../../test/Mustache/default/default/apostrophe/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/apostrophe/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/array_of_strings/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/array_of_strings/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/changing_delimiters/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/changing_delimiters/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/delimiters/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/delimiters/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/empty_list/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/empty_list/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/grandparent_context/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/grandparent_context/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/keys_with_questionmarks/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/keys_with_questionmarks/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/malicious_template/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/malicious_template/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/multiline_comment/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/multiline_comment/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/nesting/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/nesting/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/nesting_same_name/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/nesting_same_name/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/partial_array/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/partial_array/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/partial_array_of_partials/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/partial_array_of_partials/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/partial_array_of_partials_implicit/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/partial_array_of_partials_implicit/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/partial_empty/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/partial_empty/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/recursion_with_same_names/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/recursion_with_same_names/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/reuse_of_enumerables/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/reuse_of_enumerables/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/section_as_context/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/section_as_context/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/string_as_context/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/string_as_context/1.html"
+    },
+    {
+      "title": "../../test/Mustache/default/default/two_sections/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/two_sections/1.html"
+    }
+  ],
+  "passes": [
+    {
+      "title": "Always Pass",
+      "fullTitle": "Mustache Always Pass",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/ampersand_escape/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/ampersand_escape/1.html",
+      "duration": 2
+    },
+    {
+      "title": "../../test/Mustache/default/default/backslashes/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/backslashes/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/bug_11_eating_whitespace/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/bug_11_eating_whitespace/1.html",
+      "duration": 1
+    },
+    {
+      "title": "../../test/Mustache/default/default/context_lookup/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/context_lookup/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/disappearing_whitespace/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/disappearing_whitespace/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/double_render/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/double_render/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/empty_sections/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/empty_sections/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/empty_string/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/empty_string/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/empty_template/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/empty_template/1.html",
+      "duration": 1
+    },
+    {
+      "title": "../../test/Mustache/default/default/error_not_found/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/error_not_found/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/falsy/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/falsy/1.html",
+      "duration": 2
+    },
+    {
+      "title": "../../test/Mustache/default/default/included_tag/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/included_tag/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/inverted_section/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/inverted_section/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/nested_iterating/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/nested_iterating/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/null_view/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/null_view/1.html",
+      "duration": 1
+    },
+    {
+      "title": "../../test/Mustache/default/default/two_in_a_row/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/two_in_a_row/1.html",
+      "duration": 0
+    },
+    {
+      "title": "../../test/Mustache/default/default/whitespace/1.html",
+      "fullTitle": "Test ../../test/Mustache/default/default/whitespace/1.html",
+      "duration": 1
+    }
+  ]
+}

@@ -1,8 +1,5 @@
 var Mustache = require('mustache'), assert = require("assert"), dir = require('node-dir'),fs = require('fs'), path = require('path');
 
-
-
-
 describe('Mustache', function(){
 
     before(function(done){

@@ -182,6 +182,7 @@ $mustache = new Test('Mustache');
 $mustache->registerLibrary('mustache.php', true);
 $mustache->registerLibrary('mustache.js');
 $mustache->registerLibrary('mustache');
+$mustache->registerLibrary('mu');
 
 $mustache->runTests();
 $mustache->normaliseData();

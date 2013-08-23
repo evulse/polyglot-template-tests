@@ -5,20 +5,20 @@
     "passes": 38,
     "pending": 0,
     "failures": 0,
-    "start": "2013-08-23T12:53:48.073Z",
-    "end": "2013-08-23T12:53:48.109Z",
-    "duration": 36
+    "start": "2013-08-23T13:57:33.441Z",
+    "end": "2013-08-23T13:57:33.476Z",
+    "duration": 35
   },
   "tests": [
     {
       "title": "Always Pass",
       "fullTitle": "Mustache Always Pass",
-      "duration": 1
+      "duration": 0
     },
     {
       "title": "../../test/Mustache/default/default/ampersand_escape/1.html",
       "fullTitle": "Test ../../test/Mustache/default/default/ampersand_escape/1.html",
-      "duration": 1
+      "duration": 2
     },
     {
       "title": "../../test/Mustache/default/default/apostrophe/1.html",
@@ -33,7 +33,7 @@
     {
       "title": "../../test/Mustache/default/default/backslashes/1.html",
       "fullTitle": "Test ../../test/Mustache/default/default/backslashes/1.html",
-      "duration": 0
+      "duration": 1
     },
     {
       "title": "../../test/Mustache/default/default/bug_11_eating_whitespace/1.html",
@@ -138,7 +138,7 @@
     {
       "title": "../../test/Mustache/default/default/nesting_same_name/1.html",
       "fullTitle": "Test ../../test/Mustache/default/default/nesting_same_name/1.html",
-      "duration": 0
+      "duration": 1
     },
     {
       "title": "../../test/Mustache/default/default/null_view/1.html",
@@ -206,12 +206,12 @@
     {
       "title": "Always Pass",
       "fullTitle": "Mustache Always Pass",
-      "duration": 1
+      "duration": 0
     },
     {
       "title": "../../test/Mustache/default/default/ampersand_escape/1.html",
       "fullTitle": "Test ../../test/Mustache/default/default/ampersand_escape/1.html",
-      "duration": 1
+      "duration": 2
     },
     {
       "title": "../../test/Mustache/default/default/apostrophe/1.html",
@@ -226,7 +226,7 @@
     {
       "title": "../../test/Mustache/default/default/backslashes/1.html",
       "fullTitle": "Test ../../test/Mustache/default/default/backslashes/1.html",
-      "duration": 0
+      "duration": 1
     },
     {
       "title": "../../test/Mustache/default/default/bug_11_eating_whitespace/1.html",
@@ -331,7 +331,7 @@
     {
       "title": "../../test/Mustache/default/default/nesting_same_name/1.html",
       "fullTitle": "Test ../../test/Mustache/default/default/nesting_same_name/1.html",
-      "duration": 0
+      "duration": 1
     },
     {
       "title": "../../test/Mustache/default/default/null_view/1.html",

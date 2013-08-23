@@ -104,7 +104,7 @@ The report can be built after running tests with the command `php generate_repor
 - Implement Loader for Mustache (Fantom)
 - Implement Loader for Milk
 - Implement Loader for Mustache4d
-- Implement Loader for Mu
+- ~~Implement Loader for Mu~~
 - ~~ampersand_escape~~
 - ~~apostrophe~~
 - ~~array_of_strings~~

@@ -1,53 +1,20 @@
 <?php
 
-require_once('../../Vendor/php-liquid/Liquid.class.php');
+require_once('../PHP/Base.php');
+require_once('../../Vendor/autoload.php');
 
-class PHPLiquidBase extends PHPUnit_Framework_TestCase
+class PHPLiquidBase extends PHPBase
 {
 
-    public $language = 'Twig';
-    public $fileFormat = '.twig';
+    public $language = 'Liquid';
+    public $fileFormat = '.liquid';
 
-    /**
-     * @dataProvider provider
-     */
-    public function testAdd($file, $message, $template, $output)
-    {
+    public function getResults($template, $output, $directory) {
         $liquid = new LiquidTemplate();
 
-        try {
-            $result = $liquid->parse($template)->render($output[0]);
-        } catch (Exception $e) {
-            $result = trim(sprintf('%s: %s', get_class($e), $e->getMessage()));
-        }
-        $expected = $output[1];
+        return $liquid->parse($template)->render($output);
 
-        $this->assertEquals($expected, $result, $file);
 
     }
 
-    public function provider()
-    {
-        $testDir = realpath(dirname(__FILE__).'/../../test/'.$this->language);
-        $tests = array();
-
-        foreach (new RecursiveIteratorIterator(new RecursiveDirectoryIterator($testDir), RecursiveIteratorIterator::LEAVES_ONLY) as $file) {
-            if (!preg_match('/\.json$/', $file)) {
-                continue;
-            }
-
-            $test = json_decode(file_get_contents($file->getRealpath()), true);
-
-            $message = "Test";
-            $template = file_get_contents($file->getPath().'/template'.$this->fileFormat);
-            foreach($test as $key=>$value) {
-                $output = array($value, file_get_contents($file->getPath().'/'.($key+1).'.html'));
-                $tests[str_replace($testDir.'/', '', $file->getPath().'/'.($key+1).'.html')] = array(str_replace($testDir.'/', '', $file->getPath().'/'.($key+1).'.html'), $message, $template, $output);
-            }
-
-            
-        }
-
-        return $tests;
-    }
 }

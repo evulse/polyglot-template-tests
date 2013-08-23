@@ -1,0 +1,6 @@
+{
+    "directory": "mu",
+    "command": "mocha --reporter json > %s",
+    "resultType": "json",
+    "normalise": "processJS"
+}
