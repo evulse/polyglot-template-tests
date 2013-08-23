@@ -6,7 +6,7 @@ var liquid = require('liquid-node'), assert = require("assert"), dir = require('
 describe('Liquid', function(){
 
     before(function(done){
-        dir.readFiles('../../test/', {
+        dir.readFiles('../../test/Liquid/', {
             match: /.json$/
         }, function(err, content, filename, next) {
             var tests = JSON.parse(content);

@@ -154,7 +154,7 @@ class Test {
                 $tests[$test]['pretty'] = $this->prettyTestName($test);
                 $tests[$test]['test'] = $test;
                 $tests[$test]['result'] = file_get_contents(dirname(__FILE__).'/test/'.$this->name.'/'.$test);
-                $tests[$test]['template'] = file_get_contents(dirname(dirname(__FILE__).'/test/'.$this->name.'/'.$test).'/template.liquid');
+                $tests[$test]['template'] = file_get_contents(dirname(dirname(__FILE__).'/test/'.$this->name.'/'.$test).'/template.'.strtolower($this->name));
                 $tests[$test]['data'] = file_get_contents(dirname(dirname(__FILE__).'/test/'.$this->name.'/'.$test).'/data.json');
                 foreach($this->result as $library=>$data) {
                     $tests[$test]['results'][$library] = $data[$test];
@@ -177,3 +177,12 @@ $liquid->registerLibrary('liquid', true);
 $liquid->runTests();
 $liquid->normaliseData();
 $liquid->generateResults();
+
+$mustache = new Test('Mustache');
+$mustache->registerLibrary('mustache.php', true);
+$mustache->registerLibrary('mustache.js');
+$mustache->registerLibrary('mustache');
+
+$mustache->runTests();
+$mustache->normaliseData();
+$mustache->generateResults();

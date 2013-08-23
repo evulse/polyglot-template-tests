@@ -9,6 +9,11 @@ Tests written in a Polyglot format so that cross platform templating languages c
    - liquid-node (https://github.com/sirlantis/liquid-node) [Javascript]
    - Swig (https://github.com/paularmstrong/swig) [Javascript]
    - Twig (https://github.com/fabpot/Twig) [PHP]
+- Mustache (Partial)
+   - Mustache (https://github.com/defunkt/mustache) [Ruby]
+   - Mustache.php (https://github.com/bobthecow/mustache.php) [PHP]
+   - Mustache.js (https://github.com/janl/mustache.js) [Javascript]
+
 
 ##Results
 
@@ -77,10 +82,10 @@ The report can be built after running tests with the command `php generate_repor
 
 ### Mustache
 
-- Find Existing Tests and Setup To Do List
-- Implement Loader for Mustache.php
-- Implement Loader for Mustache.js
-- Implement Loader for Mustache (Ruby)
+- ~~Find Existing Tests and Setup To Do List~~
+- ~~Implement Loader for Mustache.php~~
+- ~~Implement Loader for Mustache.js~~
+- ~~Implement Loader for Mustache (Ruby)~~
 - Implement Loader for Pystache
 - Implement Loader for Mustache.erl
 - Implement Loader for Template-Mustache (Perl)
@@ -100,6 +105,56 @@ The report can be built after running tests with the command `php generate_repor
 - Implement Loader for Milk
 - Implement Loader for Mustache4d
 - Implement Loader for Mu
+- ~~ampersand_escape~~
+- ~~apostrophe~~
+- ~~array_of_strings~~
+- ~~backslashes~~
+- ~~bug_11_eating_whitespace~~
+- ~~changing_delimiters~~
+- ~~context_lookup~~
+- ~~delimiters~~
+- ~~disappearing_whitespace~~
+- ~~double_render~~
+- ~~empty_list~~
+- ~~empty_sections~~
+- ~~empty_string~~
+- ~~empty_template~~
+- ~~error_not_found~~
+- ~~falsy~~
+- ~~grandparent_context~~
+- ~~included_tag~~
+- ~~inverted_section~~
+- ~~keys_with_questionmarks~~
+- ~~malicious_template~~
+- ~~multiline_comment~~
+- ~~nested_iterating~~
+- ~~nesting~~
+- ~~nesting_same_name~~
+- ~~null_view~~
+- ~~partial_array~~
+- ~~partial_array_of_partials~~
+- ~~partial_array_of_partials_implicit~~
+- ~~partial_empty~~
+- ~~recursion_with_same_names~~
+- ~~reuse_of_enumerables~~
+- ~~section_as_context~~
+- ~~string_as_context~~
+- ~~two_in_a_row~~
+- ~~two_sections~~
+- ~~whitespace~~
+- check_falsy
+- comments
+- complex
+- dot_notation
+- escaped
+- higher_order_sections
+- nested_higher_order_sections
+- null_string
+- partial_template
+- partial_view
+- partial_whitespace
+- simple
+- unescaped
 
 ### Django
 

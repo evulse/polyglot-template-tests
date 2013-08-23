@@ -1,6 +1,7 @@
 <?php
 
-$json = json_decode(file_get_contents('results/liquid/current/results.json'), true);
+$results['liquid'] = json_decode(file_get_contents('results/Liquid/current/results.json'), true);
+$results['mustache'] = json_decode(file_get_contents('results/Mustache/current/results.json'), true);
 
 function showResult($result) {
     if($result == "pass") {
@@ -11,12 +12,13 @@ function showResult($result) {
 }
 
 ob_start();
+
 ?>
 
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap 101 Template</title>
+    <title>Polyglot Template Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
@@ -24,6 +26,15 @@ ob_start();
         <style>
         body {
             background: #f8f8f8;
+        }
+        .wrapword{
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            white-space: pre-wrap;       /* css-3 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            word-break: break-all;
+            white-space: normal;
         }
         </style>
 
@@ -37,10 +48,19 @@ ob_start();
         <h1>Polyglot Template Test</h1>
         <p class="lead">Tests written in a Polyglot format so that cross platform templating languages can be tested across different language implementations without the need to rewrite as many tests and hopefully create consistency between languages. This will make users and designers comfortable with working and interacting across different backend platforms.</p>
       </div>
-
+        <h2>Current Template Results</h2>
+        <ul class="list-group">
+<?php foreach($results as $templateLang => $json) { ?>
+    <li class="list-group-item"><a href="#<?=$templateLang?>"><?=ucwords($templateLang)?></a></li>
+<?}?>
+            </ul>
+    <?php foreach($results as $templateLang => $json) { 
+    $libraries = reset(reset(reset(reset($json))))["results"];
+    
+    ?>
 <div class="col-lg-12">
-            <h2>Results - Liquid</h2>
-            <p>Results of each Liquid library against the Liquid tests.</p>
+            <h2 id="<?=$templateLang?>">Results - <?=ucwords($templateLang)?></h2>
+            <p>Results of each <?=ucwords($templateLang)?> library against the <?=ucwords($templateLang)?> tests.</p>
 <div class="panel">
   <div class="panel-body">
       <?php foreach($json as $typeName => $type) { ?>
@@ -52,28 +72,27 @@ ob_start();
 <table class="table table-hover">
     <thead>
         <tr>
-            <th>Test</th>
-            <th>Template</th>
-            <th>Data</th>
-            <th style="width:50px;">liquid</th>
-            <th style="width:50px;">liquid-node</th>
-            <th style="width:50px;">php-liquid</th>
-            <th style="width:50px;">swig</th>
-            <th style="width:50px;">twig</th>
+            <th style="width:20%;" class="wrapword">Test</th>
+            <th style="width:30%">Template</th>
+            <th style="width:30%">Data</th>
+            <th style="width:30%">Result</th>
+            <?php foreach($libraries as $vendorName => $vendor) { ?>
+                <th style="width:50px;"><?=$vendorName?></th>
+            <?php } ?>
         </tr>
     </thead>
     <tbody>
               <?php foreach($tag as $testGroupName => $testGroup) { ?>
                   <?php foreach($testGroup as $test) { ?>
         <tr>
-            <td><?=ucwords(nl2br($testGroupName))?></td>
-            <td><?=nl2br($test['template'])?></td>
-            <td><?=nl2br($test['data'])?></td>
-            <td><?=showResult($test['results']['liquid'])?></td>
-            <td><?=showResult($test['results']['liquid-node'])?></td>
-            <td><?=showResult($test['results']['php-liquid'])?></td>
-            <td><?=showResult($test['results']['swig'])?></td>
-            <td><?=showResult($test['results']['twig'])?></td>
+            <td  class="wrapword"><?=ucwords(nl2br($testGroupName))?></td>
+            <td><pre><?=htmlentities($test['template'])?></pre></td>
+            <td><pre><?=htmlentities($test['data'])?></pre></td>
+            <td><pre><?=htmlentities($test['result'])?></pre></td>
+           <?php foreach($test['results'] as $vendor) { ?>
+            <td><?=showResult($vendor)?></td>
+                        <?php } ?>
+
         </tr>
 
                   <?php } ?>
@@ -88,7 +107,7 @@ ob_start();
   </div>
 </div>
         </div>
-
+<? } ?>
       <!-- Site footer -->
       <div class="footer">
         <p>&copy; Michael Angell 2013</p>

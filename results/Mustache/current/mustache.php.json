@@ -1,0 +1,579 @@
+{
+    "event": "suiteStart",
+    "suite": "PHP Liquid Test Suite",
+    "tests": 37
+}{
+    "event": "suiteStart",
+    "suite": "MustacheMustacheTest",
+    "tests": 37
+}{
+    "event": "suiteStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "tests": 37
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/ampersand_escape\/1.html\" ('default\/default\/ampersand_escape\/1.html', 'Test', '{{&message}}\n', array(array('Some <code>'), 'Some <code>\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/ampersand_escape\/1.html\" ('default\/default\/ampersand_escape\/1.html', 'Test', '{{&message}}\n', array(array('Some <code>'), 'Some <code>\n'))",
+    "status": "pass",
+    "time": 0.00829982757568,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/apostrophe\/1.html\" ('default\/default\/apostrophe\/1.html', 'Test', '{{apos}}{{control}}\n', array(array('\\'', 'X'), '&#39;X\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/apostrophe\/1.html\" ('default\/default\/apostrophe\/1.html', 'Test', '{{apos}}{{control}}\n', array(array('\\'', 'X'), '&#39;X\n'))",
+    "status": "fail",
+    "time": 0.00185298919678,
+    "trace": [
+        {
+            "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/mustache.php\/Base.php",
+            "line": 28,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "&#39;X\n",
+                "'X\n",
+                "default\/default\/apostrophe\/1.html"
+            ]
+        }
+    ],
+    "message": "default\/default\/apostrophe\/1.html\nFailed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/array_of_strings\/1.html\" ('default\/default\/array_of_strings\/1.html', 'Test', '{{#array_of_strings}}{{.}} {{\/array_of_strings}}\n', array(array(array('hello', 'world')), 'hello world \n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/array_of_strings\/1.html\" ('default\/default\/array_of_strings\/1.html', 'Test', '{{#array_of_strings}}{{.}} {{\/array_of_strings}}\n', array(array(array('hello', 'world')), 'hello world \n'))",
+    "status": "pass",
+    "time": 0.00106906890869,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/backslashes\/1.html\" ('default\/default\/backslashes\/1.html', 'Test', '* {{value}}\n* {{{value}}}\n* {{&value}}\n<script>\nfoo = { bar: \\'abc\\\\\"xyz\\\\\"\\' };\nfoo = { bar: \\'x\\\\\\'y\\' };\n<\/script>\n', array(array('\\\\abc'), '* \\\\abc\n* \\\\abc\n* \\\\abc\n<script>\nfoo = { bar: \\'abc\\\\\"xyz\\\\\"\\' };\nfoo = { bar: \\'x\\\\\\'y\\' };\n<\/script>\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/backslashes\/1.html\" ('default\/default\/backslashes\/1.html', 'Test', '* {{value}}\n* {{{value}}}\n* {{&value}}\n<script>\nfoo = { bar: \\'abc\\\\\"xyz\\\\\"\\' };\nfoo = { bar: \\'x\\\\\\'y\\' };\n<\/script>\n', array(array('\\\\abc'), '* \\\\abc\n* \\\\abc\n* \\\\abc\n<script>\nfoo = { bar: \\'abc\\\\\"xyz\\\\\"\\' };\nfoo = { bar: \\'x\\\\\\'y\\' };\n<\/script>\n'))",
+    "status": "pass",
+    "time": 0.00109815597534,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/bug_11_eating_whitespace\/1.html\" ('default\/default\/bug_11_eating_whitespace\/1.html', 'Test', '{{tag}} foo\n', array(array('yo'), 'yo foo\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/bug_11_eating_whitespace\/1.html\" ('default\/default\/bug_11_eating_whitespace\/1.html', 'Test', '{{tag}} foo\n', array(array('yo'), 'yo foo\n'))",
+    "status": "pass",
+    "time": 0.000386953353882,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/changing_delimiters\/1.html\" ('default\/default\/changing_delimiters\/1.html', 'Test', '{{=<% %>=}}<% foo %> {{foo}} <%{bar}%> {{{bar}}}\n', array(array('foooooooooooooo', '<b>bar!<\/b>'), 'foooooooooooooo {{foo}} <b>bar!<\/b> {{{bar}}}\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/changing_delimiters\/1.html\" ('default\/default\/changing_delimiters\/1.html', 'Test', '{{=<% %>=}}<% foo %> {{foo}} <%{bar}%> {{{bar}}}\n', array(array('foooooooooooooo', '<b>bar!<\/b>'), 'foooooooooooooo {{foo}} <b>bar!<\/b> {{{bar}}}\n'))",
+    "status": "pass",
+    "time": 0.00055718421936,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/context_lookup\/1.html\" ('default\/default\/context_lookup\/1.html', 'Test', '{{#outer}}{{#second}}{{id}}{{\/second}}{{\/outer}}\n', array(array(array(1, array(2))), '1\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/context_lookup\/1.html\" ('default\/default\/context_lookup\/1.html', 'Test', '{{#outer}}{{#second}}{{id}}{{\/second}}{{\/outer}}\n', array(array(array(1, array(2))), '1\n'))",
+    "status": "pass",
+    "time": 0.000910997390747,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/delimiters\/1.html\" ('default\/default\/delimiters\/1.html', 'Test', '{{=<% %>=}}*\n<% first %>\n* <% second %>\n<%=| |=%>\n* | third |\n|={{ }}=|\n* {{ fourth }}\n', array(array('It worked the first time.', 'And it worked the second time.', 'Then, surprisingly, it worked the third time.', 'Fourth time also fine!.'), '*\nIt worked the first time.\n* And it worked the second time.\n* Then, surprisingly, it worked the third time.\n* Fourth time also fine!.\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/delimiters\/1.html\" ('default\/default\/delimiters\/1.html', 'Test', '{{=<% %>=}}*\n<% first %>\n* <% second %>\n<%=| |=%>\n* | third |\n|={{ }}=|\n* {{ fourth }}\n', array(array('It worked the first time.', 'And it worked the second time.', 'Then, surprisingly, it worked the third time.', 'Fourth time also fine!.'), '*\nIt worked the first time.\n* And it worked the second time.\n* Then, surprisingly, it worked the third time.\n* Fourth time also fine!.\n'))",
+    "status": "pass",
+    "time": 0.00119590759277,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/disappearing_whitespace\/1.html\" ('default\/default\/disappearing_whitespace\/1.html', 'Test', '{{#bedrooms}}{{total}}{{\/bedrooms}} BED\n', array(array(true, 1), '1 BED\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/disappearing_whitespace\/1.html\" ('default\/default\/disappearing_whitespace\/1.html', 'Test', '{{#bedrooms}}{{total}}{{\/bedrooms}} BED\n', array(array(true, 1), '1 BED\n'))",
+    "status": "pass",
+    "time": 0.000738143920898,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/double_render\/1.html\" ('default\/default\/double_render\/1.html', 'Test', '{{#foo}}{{bar}}{{\/foo}}\n', array(array(true, '{{win}}', 'FAIL'), '{{win}}\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/double_render\/1.html\" ('default\/default\/double_render\/1.html', 'Test', '{{#foo}}{{bar}}{{\/foo}}\n', array(array(true, '{{win}}', 'FAIL'), '{{win}}\n'))",
+    "status": "pass",
+    "time": 0.000708103179932,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/empty_list\/1.html\" ('default\/default\/empty_list\/1.html', 'Test', 'These are the jobs:\n{{#jobs}}\n{{.}}\n{{\/jobs}}\n', array(array(array()), 'These are the jobs:\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/empty_list\/1.html\" ('default\/default\/empty_list\/1.html', 'Test', 'These are the jobs:\n{{#jobs}}\n{{.}}\n{{\/jobs}}\n', array(array(array()), 'These are the jobs:\n'))",
+    "status": "pass",
+    "time": 0.000779867172241,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/empty_sections\/1.html\" ('default\/default\/empty_sections\/1.html', 'Test', '{{#foo}}{{\/foo}}foo{{#bar}}{{\/bar}}\n', array(array(), 'foo\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/empty_sections\/1.html\" ('default\/default\/empty_sections\/1.html', 'Test', '{{#foo}}{{\/foo}}foo{{#bar}}{{\/bar}}\n', array(array(), 'foo\n'))",
+    "status": "pass",
+    "time": 0.000675916671753,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/empty_string\/1.html\" ('default\/default\/empty_string\/1.html', 'Test', '{{description}}{{#child}}{{description}}{{\/child}}\n', array(array('That is all!', array('')), 'That is all!\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/empty_string\/1.html\" ('default\/default\/empty_string\/1.html', 'Test', '{{description}}{{#child}}{{description}}{{\/child}}\n', array(array('That is all!', array('')), 'That is all!\n'))",
+    "status": "pass",
+    "time": 0.000779867172241,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/empty_template\/1.html\" ('default\/default\/empty_template\/1.html', 'Test', '<html><head><\/head><body><h1>Test<\/h1><\/body><\/html>', array(array(), '<html><head><\/head><body><h1>Test<\/h1><\/body><\/html>'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/empty_template\/1.html\" ('default\/default\/empty_template\/1.html', 'Test', '<html><head><\/head><body><h1>Test<\/h1><\/body><\/html>', array(array(), '<html><head><\/head><body><h1>Test<\/h1><\/body><\/html>'))",
+    "status": "pass",
+    "time": 0.000453948974609,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/error_not_found\/1.html\" ('default\/default\/error_not_found\/1.html', 'Test', '{{foo}}', array(array(2), ''))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/error_not_found\/1.html\" ('default\/default\/error_not_found\/1.html', 'Test', '{{foo}}', array(array(2), ''))",
+    "status": "pass",
+    "time": 0.000367164611816,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/falsy\/1.html\" ('default\/default\/falsy\/1.html', 'Test', '{{#emptyString}}empty string{{\/emptyString}}\n{{^emptyString}}inverted empty string{{\/emptyString}}\n{{#emptyArray}}empty array{{\/emptyArray}}\n{{^emptyArray}}inverted empty array{{\/emptyArray}}\n{{#zero}}zero{{\/zero}}\n{{^zero}}inverted zero{{\/zero}}\n{{#null}}null{{\/null}}\n{{^null}}inverted null{{\/null}}\n{{#undefined}}undefined{{\/undefined}}\n{{^undefined}}inverted undefined{{\/undefined}}\n{{#NaN}}NaN{{\/NaN}}\n{{^NaN}}inverted NaN{{\/NaN}}\n', array(array('', array(), 0, NULL, NULL, NULL), '\ninverted empty string\n\ninverted empty array\n\ninverted zero\n\ninverted null\n\ninverted undefined\n\ninverted NaN\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/falsy\/1.html\" ('default\/default\/falsy\/1.html', 'Test', '{{#emptyString}}empty string{{\/emptyString}}\n{{^emptyString}}inverted empty string{{\/emptyString}}\n{{#emptyArray}}empty array{{\/emptyArray}}\n{{^emptyArray}}inverted empty array{{\/emptyArray}}\n{{#zero}}zero{{\/zero}}\n{{^zero}}inverted zero{{\/zero}}\n{{#null}}null{{\/null}}\n{{^null}}inverted null{{\/null}}\n{{#undefined}}undefined{{\/undefined}}\n{{^undefined}}inverted undefined{{\/undefined}}\n{{#NaN}}NaN{{\/NaN}}\n{{^NaN}}inverted NaN{{\/NaN}}\n', array(array('', array(), 0, NULL, NULL, NULL), '\ninverted empty string\n\ninverted empty array\n\ninverted zero\n\ninverted null\n\ninverted undefined\n\ninverted NaN\n'))",
+    "status": "pass",
+    "time": 0.00365614891052,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/grandparent_context\/1.html\" ('default\/default\/grandparent_context\/1.html', 'Test', '{{grand_parent_id}}\n{{#parent_contexts}}\n{{grand_parent_id}}\n{{parent_id}}\n{{#child_contexts}}\n{{grand_parent_id}}\n{{parent_id}}\n{{child_id}}\n{{\/child_contexts}}\n{{\/parent_contexts}}\n', array(array('grand_parent1', array(array('parent1', array(array('parent1-child1'), array('parent1-child2'))), array('parent2', array(array('parent2-child1'), array('parent2-child2'))))), 'grand_parent1\ngrand_parent1\nparent1\ngrand_parent1\nparent1\nparent1-child1\ngrand_parent1\nparent1\nparent1-child2\ngrand_parent1\nparent2\ngrand_parent1\nparent2\nparent2-child1\ngrand_parent1\nparent2\nparent2-child2\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/grandparent_context\/1.html\" ('default\/default\/grandparent_context\/1.html', 'Test', '{{grand_parent_id}}\n{{#parent_contexts}}\n{{grand_parent_id}}\n{{parent_id}}\n{{#child_contexts}}\n{{grand_parent_id}}\n{{parent_id}}\n{{child_id}}\n{{\/child_contexts}}\n{{\/parent_contexts}}\n', array(array('grand_parent1', array(array('parent1', array(array('parent1-child1'), array('parent1-child2'))), array('parent2', array(array('parent2-child1'), array('parent2-child2'))))), 'grand_parent1\ngrand_parent1\nparent1\ngrand_parent1\nparent1\nparent1-child1\ngrand_parent1\nparent1\nparent1-child2\ngrand_parent1\nparent2\ngrand_parent1\nparent2\nparent2-child1\ngrand_parent1\nparent2\nparent2-child2\n'))",
+    "status": "pass",
+    "time": 0.00187993049622,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/included_tag\/1.html\" ('default\/default\/included_tag\/1.html', 'Test', 'You said \"{{{html}}}\" today\n', array(array('I like {{mustache}}'), 'You said \"I like {{mustache}}\" today\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/included_tag\/1.html\" ('default\/default\/included_tag\/1.html', 'Test', 'You said \"{{{html}}}\" today\n', array(array('I like {{mustache}}'), 'You said \"I like {{mustache}}\" today\n'))",
+    "status": "pass",
+    "time": 0.000452995300293,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/inverted_section\/1.html\" ('default\/default\/inverted_section\/1.html', 'Test', '{{#repos}}<b>{{name}}<\/b>{{\/repos}}\n{{^repos}}No repos :({{\/repos}}\n{{^nothin}}Hello!{{\/nothin}}\n', array(array(array()), '\nNo repos :(\nHello!\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/inverted_section\/1.html\" ('default\/default\/inverted_section\/1.html', 'Test', '{{#repos}}<b>{{name}}<\/b>{{\/repos}}\n{{^repos}}No repos :({{\/repos}}\n{{^nothin}}Hello!{{\/nothin}}\n', array(array(array()), '\nNo repos :(\nHello!\n'))",
+    "status": "pass",
+    "time": 0.0011568069458,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/keys_with_questionmarks\/1.html\" ('default\/default\/keys_with_questionmarks\/1.html', 'Test', '{{#person?}}\n  Hi {{name}}!\n{{\/person?}}\n', array(array(array('Jon')), '  Hi Jon!\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/keys_with_questionmarks\/1.html\" ('default\/default\/keys_with_questionmarks\/1.html', 'Test', '{{#person?}}\n  Hi {{name}}!\n{{\/person?}}\n', array(array(array('Jon')), '  Hi Jon!\n'))",
+    "status": "pass",
+    "time": 0.00074291229248,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/malicious_template\/1.html\" ('default\/default\/malicious_template\/1.html', 'Test', '{{\"+(function () {throw \"evil\"})()+\"}}\n{{{\"+(function () {throw \"evil\"})()+\"}}}\n{{> \"+(function () {throw \"evil\"})()+\"}}\n{{# \"+(function () {throw \"evil\"})()+\"}}\n{{\/ \"+(function () {throw \"evil\"})()+\"}}\n', array(array(), '\n\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/malicious_template\/1.html\" ('default\/default\/malicious_template\/1.html', 'Test', '{{\"+(function () {throw \"evil\"})()+\"}}\n{{{\"+(function () {throw \"evil\"})()+\"}}}\n{{> \"+(function () {throw \"evil\"})()+\"}}\n{{# \"+(function () {throw \"evil\"})()+\"}}\n{{\/ \"+(function () {throw \"evil\"})()+\"}}\n', array(array(), '\n\n'))",
+    "status": "pass",
+    "time": 0.00170397758484,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/multiline_comment\/1.html\" ('default\/default\/multiline_comment\/1.html', 'Test', '{{!\n\nThis is a multi-line comment.\n\n}}\nHello world!\n', array(array(), 'Hello world!\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/multiline_comment\/1.html\" ('default\/default\/multiline_comment\/1.html', 'Test', '{{!\n\nThis is a multi-line comment.\n\n}}\nHello world!\n', array(array(), 'Hello world!\n'))",
+    "status": "pass",
+    "time": 0.000506162643433,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/nested_iterating\/1.html\" ('default\/default\/nested_iterating\/1.html', 'Test', '{{#inner}}{{foo}}{{#inner}}{{bar}}{{\/inner}}{{\/inner}}\n', array(array(array(array('foo', array(array('bar'))))), 'foobar\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/nested_iterating\/1.html\" ('default\/default\/nested_iterating\/1.html', 'Test', '{{#inner}}{{foo}}{{#inner}}{{bar}}{{\/inner}}{{\/inner}}\n', array(array(array(array('foo', array(array('bar'))))), 'foobar\n'))",
+    "status": "pass",
+    "time": 0.000968933105469,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/nesting\/1.html\" ('default\/default\/nesting\/1.html', 'Test', '{{#foo}}\n  {{#a}}\n    {{b}}\n  {{\/a}}\n{{\/foo}}\n', array(array(array(array(array(1)), array(array(2)), array(array(3)))), '    1\n    2\n    3\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/nesting\/1.html\" ('default\/default\/nesting\/1.html', 'Test', '{{#foo}}\n  {{#a}}\n    {{b}}\n  {{\/a}}\n{{\/foo}}\n', array(array(array(array(array(1)), array(array(2)), array(array(3)))), '    1\n    2\n    3\n'))",
+    "status": "pass",
+    "time": 0.00102686882019,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/nesting_same_name\/1.html\" ('default\/default\/nesting_same_name\/1.html', 'Test', '{{#items}}{{name}}{{#items}}{{.}}{{\/items}}{{\/items}}\n', array(array(array(array('name', array(1, 2, 3, 4)))), 'name1234\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/nesting_same_name\/1.html\" ('default\/default\/nesting_same_name\/1.html', 'Test', '{{#items}}{{name}}{{#items}}{{.}}{{\/items}}{{\/items}}\n', array(array(array(array('name', array(1, 2, 3, 4)))), 'name1234\n'))",
+    "status": "pass",
+    "time": 0.000970125198364,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/null_view\/1.html\" ('default\/default\/null_view\/1.html', 'Test', '{{name}}\\'s friends: {{#friends}}{{name}}, {{\/friends}}', array(array('Joe', NULL), 'Joe\\'s friends: '))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/null_view\/1.html\" ('default\/default\/null_view\/1.html', 'Test', '{{name}}\\'s friends: {{#friends}}{{name}}, {{\/friends}}', array(array('Joe', NULL), 'Joe\\'s friends: '))",
+    "status": "pass",
+    "time": 0.000766038894653,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/partial_array\/1.html\" ('default\/default\/partial_array\/1.html', 'Test', '{{>partial}}', array(array(array('1', '2', '3', '4')), 'Here\\'s a non-sense array of values\n  1\n  2\n  3\n  4\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/partial_array\/1.html\" ('default\/default\/partial_array\/1.html', 'Test', '{{>partial}}', array(array(array('1', '2', '3', '4')), 'Here\\'s a non-sense array of values\n  1\n  2\n  3\n  4\n'))",
+    "status": "pass",
+    "time": 0.00111699104309,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/partial_array_of_partials\/1.html\" ('default\/default\/partial_array_of_partials\/1.html', 'Test', 'Here is some stuff!\n{{#numbers}}\n{{>partial}}\n{{\/numbers}}\n', array(array(array(array('1'), array('2'), array('3'), array('4'))), 'Here is some stuff!\n1\n2\n3\n4\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/partial_array_of_partials\/1.html\" ('default\/default\/partial_array_of_partials\/1.html', 'Test', 'Here is some stuff!\n{{#numbers}}\n{{>partial}}\n{{\/numbers}}\n', array(array(array(array('1'), array('2'), array('3'), array('4'))), 'Here is some stuff!\n1\n2\n3\n4\n'))",
+    "status": "pass",
+    "time": 0.00113201141357,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/partial_array_of_partials_implicit\/1.html\" ('default\/default\/partial_array_of_partials_implicit\/1.html', 'Test', 'Here is some stuff!\n{{#numbers}}\n{{>partial}}\n{{\/numbers}}\n', array(array(array('1', '2', '3', '4')), 'Here is some stuff!\n1\n2\n3\n4\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/partial_array_of_partials_implicit\/1.html\" ('default\/default\/partial_array_of_partials_implicit\/1.html', 'Test', 'Here is some stuff!\n{{#numbers}}\n{{>partial}}\n{{\/numbers}}\n', array(array(array('1', '2', '3', '4')), 'Here is some stuff!\n1\n2\n3\n4\n'))",
+    "status": "pass",
+    "time": 0.000506162643433,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/partial_empty\/1.html\" ('default\/default\/partial_empty\/1.html', 'Test', 'hey {{foo}}\n{{>partial}}\n', array(array(1), 'hey 1\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/partial_empty\/1.html\" ('default\/default\/partial_empty\/1.html', 'Test', 'hey {{foo}}\n{{>partial}}\n', array(array(1), 'hey 1\n'))",
+    "status": "pass",
+    "time": 0.000664949417114,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/recursion_with_same_names\/1.html\" ('default\/default\/recursion_with_same_names\/1.html', 'Test', '{{ name }}\n{{ description }}\n\n{{#terms}}\n  {{name}}\n  {{index}}\n{{\/terms}}\n', array(array('name', 'desc', array(array('t1', 0), array('t2', 1))), 'name\ndesc\n\n  t1\n  0\n  t2\n  1\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/recursion_with_same_names\/1.html\" ('default\/default\/recursion_with_same_names\/1.html', 'Test', '{{ name }}\n{{ description }}\n\n{{#terms}}\n  {{name}}\n  {{index}}\n{{\/terms}}\n', array(array('name', 'desc', array(array('t1', 0), array('t2', 1))), 'name\ndesc\n\n  t1\n  0\n  t2\n  1\n'))",
+    "status": "pass",
+    "time": 0.00125098228455,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/reuse_of_enumerables\/1.html\" ('default\/default\/reuse_of_enumerables\/1.html', 'Test', '{{#terms}}\n  {{name}}\n  {{index}}\n{{\/terms}}\n{{#terms}}\n  {{name}}\n  {{index}}\n{{\/terms}}\n', array(array(array(array('t1', 0), array('t2', 1))), '  t1\n  0\n  t2\n  1\n  t1\n  0\n  t2\n  1\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/reuse_of_enumerables\/1.html\" ('default\/default\/reuse_of_enumerables\/1.html', 'Test', '{{#terms}}\n  {{name}}\n  {{index}}\n{{\/terms}}\n{{#terms}}\n  {{name}}\n  {{index}}\n{{\/terms}}\n', array(array(array(array('t1', 0), array('t2', 1))), '  t1\n  0\n  t2\n  1\n  t1\n  0\n  t2\n  1\n'))",
+    "status": "pass",
+    "time": 0.00127482414246,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/section_as_context\/1.html\" ('default\/default\/section_as_context\/1.html', 'Test', '{{#a_object}}\n  <h1>{{title}}<\/h1>\n  <p>{{description}}<\/p>\n  <ul>\n    {{#a_list}}\n    <li>{{label}}<\/li>\n    {{\/a_list}}\n  <\/ul>\n{{\/a_object}}\n', array(array(array('this is an object', 'one of its attributes is a list', array(array('listitem1'), array('listitem2')))), '  <h1>this is an object<\/h1>\n  <p>one of its attributes is a list<\/p>\n  <ul>\n    <li>listitem1<\/li>\n    <li>listitem2<\/li>\n  <\/ul>\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/section_as_context\/1.html\" ('default\/default\/section_as_context\/1.html', 'Test', '{{#a_object}}\n  <h1>{{title}}<\/h1>\n  <p>{{description}}<\/p>\n  <ul>\n    {{#a_list}}\n    <li>{{label}}<\/li>\n    {{\/a_list}}\n  <\/ul>\n{{\/a_object}}\n', array(array(array('this is an object', 'one of its attributes is a list', array(array('listitem1'), array('listitem2')))), '  <h1>this is an object<\/h1>\n  <p>one of its attributes is a list<\/p>\n  <ul>\n    <li>listitem1<\/li>\n    <li>listitem2<\/li>\n  <\/ul>\n'))",
+    "status": "pass",
+    "time": 0.00156688690186,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/string_as_context\/1.html\" ('default\/default\/string_as_context\/1.html', 'Test', '<ul>\n{{#a_list}}\n  <li>{{a_string}}\/{{.}}<\/li>\n{{\/a_list}}\n<\/ul>', array(array('aa', array('a', 'b', 'c')), '<ul>\n  <li>aa\/a<\/li>\n  <li>aa\/b<\/li>\n  <li>aa\/c<\/li>\n<\/ul>'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/string_as_context\/1.html\" ('default\/default\/string_as_context\/1.html', 'Test', '<ul>\n{{#a_list}}\n  <li>{{a_string}}\/{{.}}<\/li>\n{{\/a_list}}\n<\/ul>', array(array('aa', array('a', 'b', 'c')), '<ul>\n  <li>aa\/a<\/li>\n  <li>aa\/b<\/li>\n  <li>aa\/c<\/li>\n<\/ul>'))",
+    "status": "pass",
+    "time": 0.000952959060669,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/two_in_a_row\/1.html\" ('default\/default\/two_in_a_row\/1.html', 'Test', '{{greeting}}, {{name}}!\n', array(array('Joe', 'Welcome'), 'Welcome, Joe!\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/two_in_a_row\/1.html\" ('default\/default\/two_in_a_row\/1.html', 'Test', '{{greeting}}, {{name}}!\n', array(array('Joe', 'Welcome'), 'Welcome, Joe!\n'))",
+    "status": "pass",
+    "time": 0.000508069992065,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/two_sections\/1.html\" ('default\/default\/two_sections\/1.html', 'Test', '{{#foo}}\n{{\/foo}}\n{{#bar}}\n{{\/bar}}\n', array(array(), ''))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/two_sections\/1.html\" ('default\/default\/two_sections\/1.html', 'Test', '{{#foo}}\n{{\/foo}}\n{{#bar}}\n{{\/bar}}\n', array(array(), ''))",
+    "status": "pass",
+    "time": 0.000669956207275,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/whitespace\/1.html\" ('default\/default\/whitespace\/1.html', 'Test', '{{tag1}}\n\n\n{{tag2}}.\n', array(array('Hello', 'World'), 'Hello\n\n\nWorld.\n'))"
+}{
+    "event": "test",
+    "suite": "MustacheMustacheTest::testAdd",
+    "test": "MustacheMustacheTest::testAdd with data set \"default\/default\/whitespace\/1.html\" ('default\/default\/whitespace\/1.html', 'Test', '{{tag1}}\n\n\n{{tag2}}.\n', array(array('Hello', 'World'), 'Hello\n\n\nWorld.\n'))",
+    "status": "pass",
+    "time": 0.000570058822632,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}

@@ -1,0 +1,6 @@
+{
+    "directory": "mustache.php",
+    "command": "phpunit --log-json %s",
+    "resultType": "json",
+    "normalise": "processPHP"
+}

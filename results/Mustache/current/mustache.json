@@ -1,0 +1,40 @@
+{"type":"suite","start":"2013-08-23 22:53:48","count":37,"rev":4}
+{"type":"case","label":null,"level":0}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/ampersand_escape/1.html","time":0.000942}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/apostrophe/1.html","time":0.001691}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/array_of_strings/1.html","time":0.002539}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/backslashes/1.html","time":0.00329}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/bug_11_eating_whitespace/1.html","time":0.003917}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/changing_delimiters/1.html","time":0.004737}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/context_lookup/1.html","time":0.005908}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/delimiters/1.html","time":0.007038}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/disappearing_whitespace/1.html","time":0.007915}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/double_render/1.html","time":0.008824}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/empty_list/1.html","time":0.009752}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/empty_sections/1.html","time":0.010677}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/empty_string/1.html","time":0.011605}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/empty_template/1.html","time":0.01229}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/error_not_found/1.html","time":0.012957}
+{"type":"test","status":"fail","label":"test_./../../test/Mustache/default/default/falsy/1.html","expected":"\"empty string\\ninverted empty string\\n\\ninverted empty array\\nzero\\n\\n\\ninverted null\\n\\ninverted undefined\\n\\ninverted NaN\\n\"","returned":"\"\\ninverted empty string\\n\\ninverted empty array\\n\\ninverted zero\\n\\ninverted null\\n\\ninverted undefined\\n\\ninverted NaN\\n\"","exception":{"message":"<\"empty string\\ninverted empty string\\n\\ninverted empty array\\nzero\\n\\n\\ninverted null\\n\\ninverted undefined\\n\\ninverted NaN\\n\">(\"UTF-8\") expected but was\n<\"\\ninverted empty string\\n\\ninverted empty array\\n\\ninverted zero\\n\\ninverted null\\n\\ninverted undefined\\n\\ninverted NaN\\n\">(\"ASCII-8BIT\").\ndiff:\n- empty string\n+ \n  inverted empty string\n  \n  inverted empty array\n- zero\n  \n+ inverted zero\n  \n  inverted null\n  \n  inverted undefined\n  \n  inverted NaN","class":"Test::Unit::Failure","file":"test.rb","line":34,"source":"assert_equal Mustache.render(t.template, t.data), t.expected","snippet":[{"32":"       define_method t.name do"},{"33":"       Mustache.template_path = t.partials"},{"34":"         assert_equal Mustache.render(t.template, t.data), t.expected"},{"35":"       end"},{"36":"     end"}],"backtrace":["test.rb:34"]},"time":0.018636}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/grandparent_context/1.html","time":0.020694}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/included_tag/1.html","time":0.023316}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/inverted_section/1.html","time":0.024483}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/keys_with_questionmarks/1.html","time":0.025411}
+{"type":"test","status":"error","label":"test_./../../test/Mustache/default/default/malicious_template/1.html","exception":{"message":"Mustache::Parser::SyntaxError: Illegal content in tag\n  Line 1\n    {{\"+(function () {throw \"evil\"})()+\"}}\n     ^","class":"Test::Unit::Error","file":"/Users/dad/.rvm/gems/ruby-2.0.0-p247/gems/mustache-0.99.4/lib/mustache/parser.rb","line":260,"source":"raise SyntaxError.new(message, pos)","snippet":[{"258":"    # handled for you."},{"259":"    def error(message, pos = position)"},{"260":"      raise SyntaxError.new(message, pos)"},{"261":"    end"},{"262":"  end"}],"backtrace":["/Users/dad/.rvm/gems/ruby-2.0.0-p247/gems/mustache-0.99.4/lib/mustache/parser.rb:260","/Users/dad/.rvm/gems/ruby-2.0.0-p247/gems/mustache-0.99.4/lib/mustache/parser.rb:140","/Users/dad/.rvm/gems/ruby-2.0.0-p247/gems/mustache-0.99.4/lib/mustache/parser.rb:94","/Users/dad/.rvm/gems/ruby-2.0.0-p247/gems/mustache-0.99.4/lib/mustache/template.rb:55","/Users/dad/.rvm/gems/ruby-2.0.0-p247/gems/mustache-0.99.4/lib/mustache/template.rb:49","/Users/dad/.rvm/gems/ruby-2.0.0-p247/gems/mustache-0.99.4/lib/mustache/template.rb:35","/Users/dad/.rvm/gems/ruby-2.0.0-p247/gems/mustache-0.99.4/lib/mustache.rb:119","/Users/dad/.rvm/gems/ruby-2.0.0-p247/gems/mustache-0.99.4/lib/mustache.rb:84","test.rb:34"]},"time":0.026316}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/multiline_comment/1.html","time":0.027173}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/nested_iterating/1.html","time":0.028397}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/nesting/1.html","time":0.029708}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/nesting_same_name/1.html","time":0.031027}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/null_view/1.html","time":0.032029}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/partial_array/1.html","time":0.03321}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/partial_array_of_partials/1.html","time":0.034718}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/partial_array_of_partials_implicit/1.html","time":0.036167}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/partial_empty/1.html","time":0.037002}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/recursion_with_same_names/1.html","time":0.038186}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/reuse_of_enumerables/1.html","time":0.039546}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/section_as_context/1.html","time":0.040932}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/string_as_context/1.html","time":0.041962}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/two_in_a_row/1.html","time":0.042732}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/two_sections/1.html","time":0.043773}
+{"type":"test","status":"pass","label":"test_./../../test/Mustache/default/default/whitespace/1.html","time":0.044527}
+{"type":"final","time":0.04475,"counts":{"total":37,"pass":35,"fail":1,"error":1,"omit":0,"todo":0}}

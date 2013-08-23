@@ -19,7 +19,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/break\/test_break_with_no_block\/1.html\" ('tags\/break\/test_break_with_no_block\/1.html', 'Test', '{% break %}', array(array(1), ''))",
     "status": "fail",
-    "time": 0.00588417053223,
+    "time": 0.0060019493103,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -45,7 +45,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/continue\/test_continue_with_no_block\/1.html\" ('tags\/continue\/test_continue_with_no_block\/1.html', 'Test', '{% continue %}', array(array(), ''))",
     "status": "fail",
-    "time": 0.000512838363647,
+    "time": 0.000442028045654,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -71,7 +71,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_bad_variable_naming_in_for_loop\/1.html\" ('tags\/for\/test_bad_variable_naming_in_for_loop\/1.html', 'Test', '{% for a\/b in x %}{% endfor %}', array(array(), ''))",
     "status": "pass",
-    "time": 0.0023717880249,
+    "time": 0.00230288505554,
     "trace": [
 
     ],
@@ -86,7 +86,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_blank_string_not_iterable\/1.html\" ('tags\/for\/test_blank_string_not_iterable\/1.html', 'Test', '{% for char in characters %}I WILL NOT BE OUTPUT{% endfor %}', array(array(''), ''))",
     "status": "pass",
-    "time": 0.000349998474121,
+    "time": 0.000339031219482,
     "trace": [
 
     ],
@@ -101,7 +101,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_dynamic_variable_limiting\/1.html\" ('tags\/for\/test_dynamic_variable_limiting\/1.html', 'Test', '{%for i in array limit: limit offset: offset %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0), 2, 2), '34'))",
     "status": "pass",
-    "time": 0.000928163528442,
+    "time": 0.000931024551392,
     "trace": [
 
     ],
@@ -131,7 +131,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for\/2.html\" ('tags\/for\/test_for\/2.html', 'Test', '{%for item in array%} yo {%endfor%}', array(array(array(1, 2)), ' yo  yo '))",
     "status": "pass",
-    "time": 0.000346899032593,
+    "time": 0.000314950942993,
     "trace": [
 
     ],
@@ -146,7 +146,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for\/3.html\" ('tags\/for\/test_for\/3.html', 'Test', '{%for item in array%} yo {%endfor%}', array(array(array(1)), ' yo '))",
     "status": "pass",
-    "time": 0.00032901763916,
+    "time": 0.000313997268677,
     "trace": [
 
     ],
@@ -161,7 +161,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for2\/1.html\" ('tags\/for\/test_for2\/1.html', 'Test', '{%for item in array%}{%endfor%}', array(array(array(1, 2)), ''))",
     "status": "pass",
-    "time": 0.000318050384521,
+    "time": 0.000345945358276,
     "trace": [
 
     ],
@@ -176,7 +176,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for3\/1.html\" ('tags\/for\/test_for3\/1.html', 'Test', '{%for item in array%}\n    yo\n{%endfor%}\n', array(array(array(1, 2, 3)), '\n    yo\n\n    yo\n\n    yo\n\n'))",
     "status": "pass",
-    "time": 0.000367879867554,
+    "time": 0.000334024429321,
     "trace": [
 
     ],
@@ -191,7 +191,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_and_if\/1.html\" ('tags\/for\/test_for_and_if\/1.html', 'Test', '{%for item in array%}{% if forloop.first %}+{% else %}-{% endif %}{%endfor%}', array(array(array(1, 2, 3)), '+--'))",
     "status": "pass",
-    "time": 0.00159192085266,
+    "time": 0.00153708457947,
     "trace": [
 
     ],
@@ -206,7 +206,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_else\/1.html\" ('tags\/for\/test_for_else\/1.html', 'Test', '{%for item in array%}+{%else%}-{%endfor%}', array(array(array(1, 2, 3)), '+++'))",
     "status": "fail",
-    "time": 0.000511884689331,
+    "time": 0.000468969345093,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -232,7 +232,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_else\/2.html\" ('tags\/for\/test_for_else\/2.html', 'Test', '{%for item in array%}+{%else%}-{%endfor%}', array(array(array()), '-'))",
     "status": "fail",
-    "time": 0.000530004501343,
+    "time": 0.000426054000854,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -258,7 +258,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_else\/3.html\" ('tags\/for\/test_for_else\/3.html', 'Test', '{%for item in array%}+{%else%}-{%endfor%}', array(array(NULL), '-'))",
     "status": "fail",
-    "time": 0.000504016876221,
+    "time": 0.000468015670776,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -284,7 +284,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_helpers\/1.html\" ('tags\/for\/test_for_helpers\/1.html', 'Test', '{%for item in array%} {{forloop.index}}\/{{forloop.length}} {%endfor%}', array(array(array(1, 2, 3)), ' 1\/3  2\/3  3\/3 '))",
     "status": "pass",
-    "time": 0.000746011734009,
+    "time": 0.000556945800781,
     "trace": [
 
     ],
@@ -299,7 +299,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_helpers2\/1.html\" ('tags\/for\/test_for_helpers2\/1.html', 'Test', '{%for item in array%} {{forloop.index}} {%endfor%}', array(array(array(1, 2, 3)), ' 1  2  3 '))",
     "status": "pass",
-    "time": 0.000475883483887,
+    "time": 0.000483989715576,
     "trace": [
 
     ],
@@ -314,7 +314,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_helpers3\/1.html\" ('tags\/for\/test_for_helpers3\/1.html', 'Test', '{%for item in array%} {{forloop.index0}} {%endfor%}', array(array(array(1, 2, 3)), ' 0  1  2 '))",
     "status": "pass",
-    "time": 0.000465869903564,
+    "time": 0.000481843948364,
     "trace": [
 
     ],
@@ -344,7 +344,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_helpers5\/1.html\" ('tags\/for\/test_for_helpers5\/1.html', 'Test', '{%for item in array%} {{forloop.rindex}} {%endfor%}', array(array(array(1, 2, 3)), ' 3  2  1 '))",
     "status": "pass",
-    "time": 0.000482082366943,
+    "time": 0.000493049621582,
     "trace": [
 
     ],
@@ -359,7 +359,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_helpers6\/1.html\" ('tags\/for\/test_for_helpers6\/1.html', 'Test', '{%for item in array%} {{forloop.first}} {%endfor%}', array(array(array(1, 2, 3)), ' true  false  false '))",
     "status": "fail",
-    "time": 0.000613927841187,
+    "time": 0.00068998336792,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -385,7 +385,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_helpers7\/1.html\" ('tags\/for\/test_for_helpers7\/1.html', 'Test', '{%for item in array%} {{forloop.last}} {%endfor%}', array(array(array(1, 2, 3)), ' false  false  true '))",
     "status": "fail",
-    "time": 0.000643968582153,
+    "time": 0.000666856765747,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -411,7 +411,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_reversed\/1.html\" ('tags\/for\/test_for_reversed\/1.html', 'Test', '{%for item in array reversed %}{{item}}{%endfor%}', array(array(array(1, 2, 3)), '321'))",
     "status": "fail",
-    "time": 0.000596046447754,
+    "time": 0.000580787658691,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -437,7 +437,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_tag_string\/1.html\" ('tags\/for\/test_for_tag_string\/1.html', 'Test', '{%for val in string%}{{val}}{%endfor%}', array(array('test string'), 'test string'))",
     "status": "fail",
-    "time": 0.000502109527588,
+    "time": 0.00049090385437,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -463,7 +463,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_tag_string2\/1.html\" ('tags\/for\/test_for_tag_string2\/1.html', 'Test', '{%for val in string limit:1%}{{val}}{%endfor%}', array(array('test string'), 'test string'))",
     "status": "fail",
-    "time": 0.000638961791992,
+    "time": 0.000516176223755,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -489,7 +489,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_tag_string3\/1.html\" ('tags\/for\/test_for_tag_string3\/1.html', 'Test', '{%for val in string%}{{forloop.name}}-{{forloop.index}}-{{forloop.length}}-{{forloop.index0}}-{{forloop.rindex}}-{{forloop.rindex0}}-{{forloop.first}}-{{forloop.last}}-{{val}}{%endfor%}', array(array('test string'), 'val-string-1-1-0-1-0-true-true-test string'))",
     "status": "fail",
-    "time": 0.000972986221313,
+    "time": 0.000887155532837,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -515,7 +515,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_with_break\/1.html\" ('tags\/for\/test_for_with_break\/1.html', 'Test', '{% for i in array.items %}{% break %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))), ''))",
     "status": "fail",
-    "time": 0.000519990921021,
+    "time": 0.00046706199646,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -541,7 +541,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_with_break2\/1.html\" ('tags\/for\/test_for_with_break2\/1.html', 'Test', '{% for i in array.items %}{{ i }}{% break %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))), '1'))",
     "status": "fail",
-    "time": 0.000494003295898,
+    "time": 0.000463962554932,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -567,7 +567,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_with_break3\/1.html\" ('tags\/for\/test_for_with_break3\/1.html', 'Test', '{% for i in array.items %}{% break %}{{ i }}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))), ''))",
     "status": "fail",
-    "time": 0.000548839569092,
+    "time": 0.000493049621582,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -593,7 +593,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_with_break4\/1.html\" ('tags\/for\/test_for_with_break4\/1.html', 'Test', '{% for i in array.items %}{{ i }}{% if i > 3 %}{% break %}{% endif %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))), '1234'))",
     "status": "fail",
-    "time": 0.000569105148315,
+    "time": 0.000552177429199,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -619,7 +619,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_with_break5\/1.html\" ('tags\/for\/test_for_with_break5\/1.html', 'Test', '{% for item in array %}{% for i in item %}{% if i == 1 %}{% break %}{% endif %}{{ i }}{% endfor %}{% endfor %}', array(array(array(array(1, 2), array(3, 4), array(5, 6))), '3456'))",
     "status": "fail",
-    "time": 0.000659942626953,
+    "time": 0.000517129898071,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -645,7 +645,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_with_break6\/1.html\" ('tags\/for\/test_for_with_break6\/1.html', 'Test', '{% for i in array.items %}{% if i == 9999 %}{% break %}{% endif %}{{ i }}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), '12345'))",
     "status": "fail",
-    "time": 0.00052809715271,
+    "time": 0.000498056411743,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -671,7 +671,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_with_continue\/1.html\" ('tags\/for\/test_for_with_continue\/1.html', 'Test', '{% for i in array.items %}{% continue %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), ''))",
     "status": "fail",
-    "time": 0.000550985336304,
+    "time": 0.000473022460938,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -697,7 +697,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_with_continue2\/1.html\" ('tags\/for\/test_for_with_continue2\/1.html', 'Test', '{% for i in array.items %}{{ i }}{% continue %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), '12345'))",
     "status": "fail",
-    "time": 0.000552177429199,
+    "time": 0.000508069992065,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -723,7 +723,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_with_continue3\/1.html\" ('tags\/for\/test_for_with_continue3\/1.html', 'Test', '{% for i in array.items %}{% continue %}{{ i }}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), ''))",
     "status": "fail",
-    "time": 0.000499963760376,
+    "time": 0.000442028045654,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -749,7 +749,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_with_continue4\/1.html\" ('tags\/for\/test_for_with_continue4\/1.html', 'Test', '{% for i in array.items %}{% if i > 3 %}{% continue %}{% endif %}{{ i }}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), '123'))",
     "status": "fail",
-    "time": 0.000591039657593,
+    "time": 0.000498056411743,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -775,7 +775,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_with_continue5\/1.html\" ('tags\/for\/test_for_with_continue5\/1.html', 'Test', '{% for i in array.items %}{% if i == 3 %}{% continue %}{% else %}{{ i }}{% endif %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), '1245'))",
     "status": "fail",
-    "time": 0.000550031661987,
+    "time": 0.000506162643433,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -801,7 +801,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_with_continue6\/1.html\" ('tags\/for\/test_for_with_continue6\/1.html', 'Test', '{% for item in array %}{% for i in item %}{% if i == 1 %}{% continue %}{% endif %}{{ i }}{% endfor %}{% endfor %}', array(array(array(array(1, 2), array(3, 4), array(5, 6))), '23456'))",
     "status": "fail",
-    "time": 0.000586032867432,
+    "time": 0.000513076782227,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -827,7 +827,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_with_continue7\/1.html\" ('tags\/for\/test_for_with_continue7\/1.html', 'Test', '{% for i in array.items %}{% if i == 9999 %}{% continue %}{% endif %}{{ i }}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), '12345'))",
     "status": "fail",
-    "time": 0.00050687789917,
+    "time": 0.000509977340698,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -853,7 +853,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_with_range\/1.html\" ('tags\/for\/test_for_with_range\/1.html', 'Test', '{%for item in (1..3) %} {{item}} {%endfor%}', array(array(), ' 1  2  3 '))",
     "status": "fail",
-    "time": 0.000534057617188,
+    "time": 0.000466108322144,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -879,7 +879,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_with_variable\/1.html\" ('tags\/for\/test_for_with_variable\/1.html', 'Test', '{%for item in array%} {{item}} {%endfor%}', array(array(array(1, 2, 3)), ' 1  2  3 '))",
     "status": "pass",
-    "time": 0.000492811203003,
+    "time": 0.000468015670776,
     "trace": [
 
     ],
@@ -894,7 +894,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_with_variable2\/1.html\" ('tags\/for\/test_for_with_variable2\/1.html', 'Test', '{%for item in array%}{{item}}{%endfor%}', array(array(array(1, 2, 3)), '123'))",
     "status": "pass",
-    "time": 0.000434160232544,
+    "time": 0.000412940979004,
     "trace": [
 
     ],
@@ -909,7 +909,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_with_variable2\/2.html\" ('tags\/for\/test_for_with_variable2\/2.html', 'Test', '{%for item in array%}{{item}}{%endfor%}', array(array(array(1, 2, 3)), '123'))",
     "status": "pass",
-    "time": 0.000412940979004,
+    "time": 0.000416040420532,
     "trace": [
 
     ],
@@ -924,7 +924,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_with_variable2\/3.html\" ('tags\/for\/test_for_with_variable2\/3.html', 'Test', '{%for item in array%}{{item}}{%endfor%}', array(array(array('a', 'b', 'c', 'd')), 'abcd'))",
     "status": "pass",
-    "time": 0.000424861907959,
+    "time": 0.000453948974609,
     "trace": [
 
     ],
@@ -939,7 +939,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_with_variable2\/4.html\" ('tags\/for\/test_for_with_variable2\/4.html', 'Test', '{%for item in array%}{{item}}{%endfor%}', array(array(array('a', ' ', 'b', ' ', 'c')), 'a b c'))",
     "status": "pass",
-    "time": 0.000449895858765,
+    "time": 0.000481843948364,
     "trace": [
 
     ],
@@ -954,7 +954,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_for_with_variable2\/5.html\" ('tags\/for\/test_for_with_variable2\/5.html', 'Test', '{%for item in array%}{{item}}{%endfor%}', array(array(array('a', '', 'b', '', 'c')), 'abc'))",
     "status": "pass",
-    "time": 0.000441074371338,
+    "time": 0.000504016876221,
     "trace": [
 
     ],
@@ -969,7 +969,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_limiting\/1.html\" ('tags\/for\/test_limiting\/1.html', 'Test', '{%for i in array limit:2 %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)), '12'))",
     "status": "pass",
-    "time": 0.00041389465332,
+    "time": 0.000458955764771,
     "trace": [
 
     ],
@@ -984,7 +984,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_limiting2\/1.html\" ('tags\/for\/test_limiting2\/1.html', 'Test', '{%for i in array limit:4 %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)), '1234'))",
     "status": "pass",
-    "time": 0.000501871109009,
+    "time": 0.00046181678772,
     "trace": [
 
     ],
@@ -999,7 +999,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_limiting3\/1.html\" ('tags\/for\/test_limiting3\/1.html', 'Test', '{%for i in array limit:4 offset:2 %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)), '3456'))",
     "status": "pass",
-    "time": 0.00052285194397,
+    "time": 0.000473022460938,
     "trace": [
 
     ],
@@ -1014,7 +1014,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_limiting4\/1.html\" ('tags\/for\/test_limiting4\/1.html', 'Test', '{%for i in array limit: 4 offset: 2 %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)), '3456'))",
     "status": "pass",
-    "time": 0.000521898269653,
+    "time": 0.000471830368042,
     "trace": [
 
     ],
@@ -1029,7 +1029,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_nested_for\/1.html\" ('tags\/for\/test_nested_for\/1.html', 'Test', '{%for item in array%}{%for i in item%}{{ i }}{%endfor%}{%endfor%}', array(array(array(array(1, 2), array(3, 4), array(5, 6))), '123456'))",
     "status": "pass",
-    "time": 0.000732898712158,
+    "time": 0.000684022903442,
     "trace": [
 
     ],
@@ -1044,7 +1044,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_offset_only\/1.html\" ('tags\/for\/test_offset_only\/1.html', 'Test', '{%for i in array offset:7 %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)), '890'))",
     "status": "pass",
-    "time": 0.000457048416138,
+    "time": 0.000440835952759,
     "trace": [
 
     ],
@@ -1059,7 +1059,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_pause_resume\/1.html\" ('tags\/for\/test_pause_resume\/1.html', 'Test', '{%for i in array.items limit: 3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit: 3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit: 3 %}{{i}}{%endfor%}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0))), '123\nnext\n456\nnext\n789'))",
     "status": "pass",
-    "time": 0.00102996826172,
+    "time": 0.000975131988525,
     "trace": [
 
     ],
@@ -1074,7 +1074,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_pause_resume_BIG_limit\/1.html\" ('tags\/for\/test_pause_resume_BIG_limit\/1.html', 'Test', '{%for i in array.items limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:1000 %}{{i}}{%endfor%}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0))), '123\nnext\n456\nnext\n7890'))",
     "status": "pass",
-    "time": 0.00102210044861,
+    "time": 0.00101399421692,
     "trace": [
 
     ],
@@ -1089,7 +1089,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_pause_resume_BIG_offset\/1.html\" ('tags\/for\/test_pause_resume_BIG_offset\/1.html', 'Test', '{%for i in array.items limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:3 offset:1000 %}{{i}}{%endfor%}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0))), '123\nnext\n456\nnext\n'))",
     "status": "pass",
-    "time": 0.000891923904419,
+    "time": 0.000945091247559,
     "trace": [
 
     ],
@@ -1104,7 +1104,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_pause_resume_limit\/1.html\" ('tags\/for\/test_pause_resume_limit\/1.html', 'Test', '{%for i in array.items limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:1 %}{{i}}{%endfor%}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0))), '123\nnext\n456\nnext\n7'))",
     "status": "pass",
-    "time": 0.000936985015869,
+    "time": 0.000982999801636,
     "trace": [
 
     ],
@@ -1119,7 +1119,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/for\/test_spacing_with_variable_naming_in_for_loop\/1.html\" ('tags\/for\/test_spacing_with_variable_naming_in_for_loop\/1.html', 'Test', '{% for       item   in   items %}{{item}}{% endfor %}', array(array(array(1, 2, 3, 4, 5)), '12345'))",
     "status": "pass",
-    "time": 0.000488042831421,
+    "time": 0.000473976135254,
     "trace": [
 
     ],
@@ -1134,7 +1134,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/html\/test_enumerable_drop\/1.html\" ('tags\/html\/test_enumerable_drop\/1.html', 'Test', '{% tablerow n in numbers cols:3%} {{n}} {% endtablerow %}', array(array(array(1, 2, 3, 4, 5, 6)), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n'))",
     "status": "pass",
-    "time": 0.0010039806366,
+    "time": 0.000913858413696,
     "trace": [
 
     ],
@@ -1149,7 +1149,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/html\/test_html_col_counter\/1.html\" ('tags\/html\/test_html_col_counter\/1.html', 'Test', '{% tablerow n in numbers cols:2%}{{tablerowloop.col}}{% endtablerow %}', array(array(array(1, 2, 3, 4, 5, 6)), '<tr class=\"row1\">\n<td class=\"col1\">1<\/td><td class=\"col2\">2<\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\">1<\/td><td class=\"col2\">2<\/td><\/tr>\n<tr class=\"row3\"><td class=\"col1\">1<\/td><td class=\"col2\">2<\/td><\/tr>\n'))",
     "status": "fail",
-    "time": 0.000782012939453,
+    "time": 0.000737190246582,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",
@@ -1175,7 +1175,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/html\/test_html_table\/1.html\" ('tags\/html\/test_html_table\/1.html', 'Test', '{% tablerow n in numbers cols:3%} {{n}} {% endtablerow %}', array(array(array(1, 2, 3, 4, 5, 6)), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n'))",
     "status": "pass",
-    "time": 0.000627994537354,
+    "time": 0.000598192214966,
     "trace": [
 
     ],
@@ -1190,7 +1190,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/html\/test_html_table\/2.html\" ('tags\/html\/test_html_table\/2.html', 'Test', '{% tablerow n in numbers cols:3%} {{n}} {% endtablerow %}', array(array(array()), '<tr class=\"row1\">\n<\/tr>\n'))",
     "status": "pass",
-    "time": 0.000382900238037,
+    "time": 0.000364065170288,
     "trace": [
 
     ],
@@ -1205,7 +1205,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/html\/test_html_table_with_different_cols\/1.html\" ('tags\/html\/test_html_table_with_different_cols\/1.html', 'Test', '{% tablerow n in numbers cols:5%} {{n}} {% endtablerow %}', array(array(array(1, 2, 3, 4, 5, 6)), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><td class=\"col4\"> 4 <\/td><td class=\"col5\"> 5 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 6 <\/td><\/tr>\n'))",
     "status": "pass",
-    "time": 0.00054407119751,
+    "time": 0.000576972961426,
     "trace": [
 
     ],
@@ -1220,7 +1220,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/html\/test_offset_and_limit\/1.html\" ('tags\/html\/test_offset_and_limit\/1.html', 'Test', '{% tablerow n in numbers cols:3 offset:1 limit:6%} {{n}} {% endtablerow %}', array(array(array(0, 1, 2, 3, 4, 5, 6, 7)), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n'))",
     "status": "pass",
-    "time": 0.000648975372314,
+    "time": 0.000581026077271,
     "trace": [
 
     ],
@@ -1235,7 +1235,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/html\/test_quoted_fragment\/1.html\" ('tags\/html\/test_quoted_fragment\/1.html', 'Test', '{% tablerow n in collections.frontpage cols:3%} {{n}} {% endtablerow %}', array(array(array(array(1, 2, 3, 4, 5, 6))), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n'))",
     "status": "pass",
-    "time": 0.000546932220459,
+    "time": 0.000548124313354,
     "trace": [
 
     ],
@@ -1250,7 +1250,7 @@
     "suite": "PHPLiquidTest::testAdd",
     "test": "PHPLiquidTest::testAdd with data set \"tags\/html\/test_quoted_fragment2\/1.html\" ('tags\/html\/test_quoted_fragment2\/1.html', 'Test', '{% tablerow n in collections[\\'frontpage\\'] cols:3%} {{n}} {% endtablerow %}', array(array(array(array(1, 2, 3, 4, 5, 6))), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n'))",
     "status": "fail",
-    "time": 0.00083589553833,
+    "time": 0.000786066055298,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/php-liquid\/Base.php",

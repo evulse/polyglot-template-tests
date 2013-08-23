@@ -1,0 +1,6 @@
+{
+    "directory": "mustache",
+    "command": "ruby test.rb --runner j > %s",
+    "resultType": "json",
+    "normalise": "processRuby"
+}

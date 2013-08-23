@@ -19,7 +19,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/break\/test_break_with_no_block\/1.html\" ('tags\/break\/test_break_with_no_block\/data.json', 'Test', '{% break %}', array(array(1), ''))",
     "status": "fail",
-    "time": 0.0251481533051,
+    "time": 0.0261681079865,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -45,7 +45,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/continue\/test_continue_with_no_block\/1.html\" ('tags\/continue\/test_continue_with_no_block\/data.json', 'Test', '{% continue %}', array(array(), ''))",
     "status": "fail",
-    "time": 0.00161814689636,
+    "time": 0.00168585777283,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -71,7 +71,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_bad_variable_naming_in_for_loop\/1.html\" ('tags\/for\/test_bad_variable_naming_in_for_loop\/data.json', 'Test', '{% for a\/b in x %}{% endfor %}', array(array(), ''))",
     "status": "fail",
-    "time": 0.0028760433197,
+    "time": 0.00282597541809,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -97,7 +97,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_blank_string_not_iterable\/1.html\" ('tags\/for\/test_blank_string_not_iterable\/data.json', 'Test', '{% for char in characters %}I WILL NOT BE OUTPUT{% endfor %}', array(array(''), ''))",
     "status": "pass",
-    "time": 0.00626015663147,
+    "time": 0.0065610408783,
     "trace": [
 
     ],
@@ -112,7 +112,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_dynamic_variable_limiting\/1.html\" ('tags\/for\/test_dynamic_variable_limiting\/data.json', 'Test', '{%for i in array limit: limit offset: offset %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0), 2, 2), '34'))",
     "status": "fail",
-    "time": 0.00190997123718,
+    "time": 0.00187706947327,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -138,7 +138,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for\/1.html\" ('tags\/for\/test_for\/data.json', 'Test', '{%for item in array%} yo {%endfor%}', array(array(array(1, 2, 3, 4)), ' yo  yo  yo  yo '))",
     "status": "pass",
-    "time": 0.00251817703247,
+    "time": 0.00231695175171,
     "trace": [
 
     ],
@@ -153,7 +153,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for\/2.html\" ('tags\/for\/test_for\/data.json', 'Test', '{%for item in array%} yo {%endfor%}', array(array(array(1, 2)), ' yo  yo '))",
     "status": "pass",
-    "time": 0.000192165374756,
+    "time": 0.000183820724487,
     "trace": [
 
     ],
@@ -168,7 +168,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for\/3.html\" ('tags\/for\/test_for\/data.json', 'Test', '{%for item in array%} yo {%endfor%}', array(array(array(1)), ' yo '))",
     "status": "pass",
-    "time": 0.000182867050171,
+    "time": 0.000184059143066,
     "trace": [
 
     ],
@@ -183,7 +183,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for2\/1.html\" ('tags\/for\/test_for2\/data.json', 'Test', '{%for item in array%}{%endfor%}', array(array(array(1, 2)), ''))",
     "status": "pass",
-    "time": 0.00230503082275,
+    "time": 0.00228905677795,
     "trace": [
 
     ],
@@ -198,7 +198,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for3\/1.html\" ('tags\/for\/test_for3\/data.json', 'Test', '{%for item in array%}\n    yo\n{%endfor%}\n', array(array(array(1, 2, 3)), '\n    yo\n\n    yo\n\n    yo\n\n'))",
     "status": "fail",
-    "time": 0.00244307518005,
+    "time": 0.00241303443909,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -224,7 +224,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_and_if\/1.html\" ('tags\/for\/test_for_and_if\/data.json', 'Test', '{%for item in array%}{% if forloop.first %}+{% else %}-{% endif %}{%endfor%}', array(array(array(1, 2, 3)), '+--'))",
     "status": "fail",
-    "time": 0.00426506996155,
+    "time": 0.00450897216797,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -250,7 +250,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_else\/1.html\" ('tags\/for\/test_for_else\/data.json', 'Test', '{%for item in array%}+{%else%}-{%endfor%}', array(array(array(1, 2, 3)), '+++'))",
     "status": "pass",
-    "time": 0.00268602371216,
+    "time": 0.00250196456909,
     "trace": [
 
     ],
@@ -265,7 +265,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_else\/2.html\" ('tags\/for\/test_for_else\/data.json', 'Test', '{%for item in array%}+{%else%}-{%endfor%}', array(array(array()), '-'))",
     "status": "pass",
-    "time": 0.00019097328186,
+    "time": 0.000211000442505,
     "trace": [
 
     ],
@@ -280,7 +280,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_else\/3.html\" ('tags\/for\/test_for_else\/data.json', 'Test', '{%for item in array%}+{%else%}-{%endfor%}', array(array(NULL), '-'))",
     "status": "pass",
-    "time": 0.000190019607544,
+    "time": 0.000203847885132,
     "trace": [
 
     ],
@@ -295,7 +295,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_helpers\/1.html\" ('tags\/for\/test_for_helpers\/data.json', 'Test', '{%for item in array%} {{forloop.index}}\/{{forloop.length}} {%endfor%}', array(array(array(1, 2, 3)), ' 1\/3  2\/3  3\/3 '))",
     "status": "fail",
-    "time": 0.00624084472656,
+    "time": 0.0053129196167,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -321,7 +321,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_helpers2\/1.html\" ('tags\/for\/test_for_helpers2\/data.json', 'Test', '{%for item in array%} {{forloop.index}} {%endfor%}', array(array(array(1, 2, 3)), ' 1  2  3 '))",
     "status": "fail",
-    "time": 0.00362300872803,
+    "time": 0.00331997871399,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -347,7 +347,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_helpers3\/1.html\" ('tags\/for\/test_for_helpers3\/data.json', 'Test', '{%for item in array%} {{forloop.index0}} {%endfor%}', array(array(array(1, 2, 3)), ' 0  1  2 '))",
     "status": "fail",
-    "time": 0.00364804267883,
+    "time": 0.00347304344177,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -373,7 +373,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_helpers4\/1.html\" ('tags\/for\/test_for_helpers4\/data.json', 'Test', '{%for item in array%} {{forloop.rindex0}} {%endfor%}', array(array(array(1, 2, 3)), ' 2  1  0 '))",
     "status": "fail",
-    "time": 0.00359106063843,
+    "time": 0.00378608703613,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -399,7 +399,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_helpers5\/1.html\" ('tags\/for\/test_for_helpers5\/data.json', 'Test', '{%for item in array%} {{forloop.rindex}} {%endfor%}', array(array(array(1, 2, 3)), ' 3  2  1 '))",
     "status": "fail",
-    "time": 0.00358390808105,
+    "time": 0.00353693962097,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -425,7 +425,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_helpers6\/1.html\" ('tags\/for\/test_for_helpers6\/data.json', 'Test', '{%for item in array%} {{forloop.first}} {%endfor%}', array(array(array(1, 2, 3)), ' true  false  false '))",
     "status": "fail",
-    "time": 0.00351119041443,
+    "time": 0.00329613685608,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -451,7 +451,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_helpers7\/1.html\" ('tags\/for\/test_for_helpers7\/data.json', 'Test', '{%for item in array%} {{forloop.last}} {%endfor%}', array(array(array(1, 2, 3)), ' false  false  true '))",
     "status": "fail",
-    "time": 0.00342893600464,
+    "time": 0.00328207015991,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -477,7 +477,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_reversed\/1.html\" ('tags\/for\/test_for_reversed\/data.json', 'Test', '{%for item in array reversed %}{{item}}{%endfor%}', array(array(array(1, 2, 3)), '321'))",
     "status": "fail",
-    "time": 0.00164699554443,
+    "time": 0.00162196159363,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -503,7 +503,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_tag_string\/1.html\" ('tags\/for\/test_for_tag_string\/data.json', 'Test', '{%for val in string%}{{val}}{%endfor%}', array(array('test string'), 'test string'))",
     "status": "fail",
-    "time": 0.00311899185181,
+    "time": 0.00288414955139,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -529,7 +529,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_tag_string2\/1.html\" ('tags\/for\/test_for_tag_string2\/data.json', 'Test', '{%for val in string limit:1%}{{val}}{%endfor%}', array(array('test string'), 'test string'))",
     "status": "fail",
-    "time": 0.00172996520996,
+    "time": 0.00182604789734,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -555,7 +555,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_tag_string3\/1.html\" ('tags\/for\/test_for_tag_string3\/data.json', 'Test', '{%for val in string%}{{forloop.name}}-{{forloop.index}}-{{forloop.length}}-{{forloop.index0}}-{{forloop.rindex}}-{{forloop.rindex0}}-{{forloop.first}}-{{forloop.last}}-{{val}}{%endfor%}', array(array('test string'), 'val-string-1-1-0-1-0-true-true-test string'))",
     "status": "fail",
-    "time": 0.0097119808197,
+    "time": 0.0092179775238,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -581,7 +581,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_with_break\/1.html\" ('tags\/for\/test_for_with_break\/data.json', 'Test', '{% for i in array.items %}{% break %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))), ''))",
     "status": "fail",
-    "time": 0.00173211097717,
+    "time": 0.00165486335754,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -607,7 +607,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_with_break2\/1.html\" ('tags\/for\/test_for_with_break2\/data.json', 'Test', '{% for i in array.items %}{{ i }}{% break %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))), '1'))",
     "status": "fail",
-    "time": 0.0018310546875,
+    "time": 0.00170803070068,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -633,7 +633,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_with_break3\/1.html\" ('tags\/for\/test_for_with_break3\/data.json', 'Test', '{% for i in array.items %}{% break %}{{ i }}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))), ''))",
     "status": "fail",
-    "time": 0.00169491767883,
+    "time": 0.00170588493347,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -659,7 +659,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_with_break4\/1.html\" ('tags\/for\/test_for_with_break4\/data.json', 'Test', '{% for i in array.items %}{{ i }}{% if i > 3 %}{% break %}{% endif %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))), '1234'))",
     "status": "fail",
-    "time": 0.00251007080078,
+    "time": 0.00272011756897,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -685,7 +685,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_with_break5\/1.html\" ('tags\/for\/test_for_with_break5\/data.json', 'Test', '{% for item in array %}{% for i in item %}{% if i == 1 %}{% break %}{% endif %}{{ i }}{% endfor %}{% endfor %}', array(array(array(array(1, 2), array(3, 4), array(5, 6))), '3456'))",
     "status": "fail",
-    "time": 0.00235104560852,
+    "time": 0.00233197212219,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -711,7 +711,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_with_break6\/1.html\" ('tags\/for\/test_for_with_break6\/data.json', 'Test', '{% for i in array.items %}{% if i == 9999 %}{% break %}{% endif %}{{ i }}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), '12345'))",
     "status": "fail",
-    "time": 0.00196218490601,
+    "time": 0.00196290016174,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -737,7 +737,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_with_continue\/1.html\" ('tags\/for\/test_for_with_continue\/data.json', 'Test', '{% for i in array.items %}{% continue %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), ''))",
     "status": "fail",
-    "time": 0.00175404548645,
+    "time": 0.00164604187012,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -763,7 +763,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_with_continue2\/1.html\" ('tags\/for\/test_for_with_continue2\/data.json', 'Test', '{% for i in array.items %}{{ i }}{% continue %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), '12345'))",
     "status": "fail",
-    "time": 0.00177907943726,
+    "time": 0.00174999237061,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -789,7 +789,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_with_continue3\/1.html\" ('tags\/for\/test_for_with_continue3\/data.json', 'Test', '{% for i in array.items %}{% continue %}{{ i }}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), ''))",
     "status": "fail",
-    "time": 0.00181818008423,
+    "time": 0.0017101764679,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -815,7 +815,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_with_continue4\/1.html\" ('tags\/for\/test_for_with_continue4\/data.json', 'Test', '{% for i in array.items %}{% if i > 3 %}{% continue %}{% endif %}{{ i }}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), '123'))",
     "status": "fail",
-    "time": 0.00202989578247,
+    "time": 0.00200700759888,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -841,7 +841,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_with_continue5\/1.html\" ('tags\/for\/test_for_with_continue5\/data.json', 'Test', '{% for i in array.items %}{% if i == 3 %}{% continue %}{% else %}{{ i }}{% endif %}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), '1245'))",
     "status": "fail",
-    "time": 0.00249099731445,
+    "time": 0.00211715698242,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -867,7 +867,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_with_continue6\/1.html\" ('tags\/for\/test_for_with_continue6\/data.json', 'Test', '{% for item in array %}{% for i in item %}{% if i == 1 %}{% continue %}{% endif %}{{ i }}{% endfor %}{% endfor %}', array(array(array(array(1, 2), array(3, 4), array(5, 6))), '23456'))",
     "status": "fail",
-    "time": 0.00223898887634,
+    "time": 0.00213193893433,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -893,7 +893,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_with_continue7\/1.html\" ('tags\/for\/test_for_with_continue7\/data.json', 'Test', '{% for i in array.items %}{% if i == 9999 %}{% continue %}{% endif %}{{ i }}{% endfor %}', array(array(array(array(1, 2, 3, 4, 5))), '12345'))",
     "status": "fail",
-    "time": 0.00212812423706,
+    "time": 0.0020968914032,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -919,7 +919,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_with_range\/1.html\" ('tags\/for\/test_for_with_range\/data.json', 'Test', '{%for item in (1..3) %} {{item}} {%endfor%}', array(array(), ' 1  2  3 '))",
     "status": "pass",
-    "time": 0.00362801551819,
+    "time": 0.00347495079041,
     "trace": [
 
     ],
@@ -934,7 +934,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_with_variable\/1.html\" ('tags\/for\/test_for_with_variable\/data.json', 'Test', '{%for item in array%} {{item}} {%endfor%}', array(array(array(1, 2, 3)), ' 1  2  3 '))",
     "status": "pass",
-    "time": 0.00303292274475,
+    "time": 0.00299501419067,
     "trace": [
 
     ],
@@ -949,7 +949,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_with_variable2\/1.html\" ('tags\/for\/test_for_with_variable2\/data.json', 'Test', '{%for item in array%}{{item}}{%endfor%}', array(array(array(1, 2, 3)), '123'))",
     "status": "pass",
-    "time": 0.00273585319519,
+    "time": 0.00302910804749,
     "trace": [
 
     ],
@@ -964,7 +964,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_with_variable2\/2.html\" ('tags\/for\/test_for_with_variable2\/data.json', 'Test', '{%for item in array%}{{item}}{%endfor%}', array(array(array(1, 2, 3)), '123'))",
     "status": "pass",
-    "time": 0.000201940536499,
+    "time": 0.000218868255615,
     "trace": [
 
     ],
@@ -979,7 +979,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_with_variable2\/3.html\" ('tags\/for\/test_for_with_variable2\/data.json', 'Test', '{%for item in array%}{{item}}{%endfor%}', array(array(array('a', 'b', 'c', 'd')), 'abcd'))",
     "status": "pass",
-    "time": 0.000222206115723,
+    "time": 0.000247955322266,
     "trace": [
 
     ],
@@ -994,7 +994,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_with_variable2\/4.html\" ('tags\/for\/test_for_with_variable2\/data.json', 'Test', '{%for item in array%}{{item}}{%endfor%}', array(array(array('a', ' ', 'b', ' ', 'c')), 'a b c'))",
     "status": "pass",
-    "time": 0.000212907791138,
+    "time": 0.000205039978027,
     "trace": [
 
     ],
@@ -1009,7 +1009,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_for_with_variable2\/5.html\" ('tags\/for\/test_for_with_variable2\/data.json', 'Test', '{%for item in array%}{{item}}{%endfor%}', array(array(array('a', '', 'b', '', 'c')), 'abc'))",
     "status": "pass",
-    "time": 0.000211000442505,
+    "time": 0.000204086303711,
     "trace": [
 
     ],
@@ -1024,7 +1024,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_limiting\/1.html\" ('tags\/for\/test_limiting\/data.json', 'Test', '{%for i in array limit:2 %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)), '12'))",
     "status": "fail",
-    "time": 0.00163602828979,
+    "time": 0.00163507461548,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -1050,7 +1050,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_limiting2\/1.html\" ('tags\/for\/test_limiting2\/data.json', 'Test', '{%for i in array limit:4 %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)), '1234'))",
     "status": "fail",
-    "time": 0.00168395042419,
+    "time": 0.00166416168213,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -1076,7 +1076,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_limiting3\/1.html\" ('tags\/for\/test_limiting3\/data.json', 'Test', '{%for i in array limit:4 offset:2 %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)), '3456'))",
     "status": "fail",
-    "time": 0.0117650032043,
+    "time": 0.0114839076996,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -1102,7 +1102,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_limiting4\/1.html\" ('tags\/for\/test_limiting4\/data.json', 'Test', '{%for i in array limit: 4 offset: 2 %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)), '3456'))",
     "status": "fail",
-    "time": 0.00164294242859,
+    "time": 0.00161695480347,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -1128,7 +1128,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_nested_for\/1.html\" ('tags\/for\/test_nested_for\/data.json', 'Test', '{%for item in array%}{%for i in item%}{{ i }}{%endfor%}{%endfor%}', array(array(array(array(1, 2), array(3, 4), array(5, 6))), '123456'))",
     "status": "pass",
-    "time": 0.00351595878601,
+    "time": 0.00341987609863,
     "trace": [
 
     ],
@@ -1143,7 +1143,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_offset_only\/1.html\" ('tags\/for\/test_offset_only\/data.json', 'Test', '{%for i in array offset:7 %}{{ i }}{%endfor%}', array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)), '890'))",
     "status": "fail",
-    "time": 0.0014979839325,
+    "time": 0.00150084495544,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -1169,7 +1169,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_pause_resume\/1.html\" ('tags\/for\/test_pause_resume\/data.json', 'Test', '{%for i in array.items limit: 3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit: 3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit: 3 %}{{i}}{%endfor%}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0))), '123\nnext\n456\nnext\n789'))",
     "status": "fail",
-    "time": 0.00248503684998,
+    "time": 0.00241184234619,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -1195,7 +1195,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_pause_resume_BIG_limit\/1.html\" ('tags\/for\/test_pause_resume_BIG_limit\/data.json', 'Test', '{%for i in array.items limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:1000 %}{{i}}{%endfor%}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0))), '123\nnext\n456\nnext\n7890'))",
     "status": "fail",
-    "time": 0.00255703926086,
+    "time": 0.0024299621582,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -1221,7 +1221,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_pause_resume_BIG_offset\/1.html\" ('tags\/for\/test_pause_resume_BIG_offset\/data.json', 'Test', '{%for i in array.items limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:3 offset:1000 %}{{i}}{%endfor%}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0))), '123\nnext\n456\nnext\n'))",
     "status": "fail",
-    "time": 0.0028018951416,
+    "time": 0.00250601768494,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -1247,7 +1247,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_pause_resume_limit\/1.html\" ('tags\/for\/test_pause_resume_limit\/data.json', 'Test', '{%for i in array.items limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:3 %}{{i}}{%endfor%}\nnext\n{%for i in array.items offset:continue limit:1 %}{{i}}{%endfor%}', array(array(array(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0))), '123\nnext\n456\nnext\n7'))",
     "status": "fail",
-    "time": 0.00253796577454,
+    "time": 0.00244402885437,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -1273,7 +1273,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/for\/test_spacing_with_variable_naming_in_for_loop\/1.html\" ('tags\/for\/test_spacing_with_variable_naming_in_for_loop\/data.json', 'Test', '{% for       item   in   items %}{{item}}{% endfor %}', array(array(array(1, 2, 3, 4, 5)), '12345'))",
     "status": "pass",
-    "time": 0.00291395187378,
+    "time": 0.00321102142334,
     "trace": [
 
     ],
@@ -1288,7 +1288,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/html\/test_enumerable_drop\/1.html\" ('tags\/html\/test_enumerable_drop\/data.json', 'Test', '{% tablerow n in numbers cols:3%} {{n}} {% endtablerow %}', array(array(array(1, 2, 3, 4, 5, 6)), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n'))",
     "status": "fail",
-    "time": 0.00156283378601,
+    "time": 0.00168490409851,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -1314,7 +1314,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/html\/test_html_col_counter\/1.html\" ('tags\/html\/test_html_col_counter\/data.json', 'Test', '{% tablerow n in numbers cols:2%}{{tablerowloop.col}}{% endtablerow %}', array(array(array(1, 2, 3, 4, 5, 6)), '<tr class=\"row1\">\n<td class=\"col1\">1<\/td><td class=\"col2\">2<\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\">1<\/td><td class=\"col2\">2<\/td><\/tr>\n<tr class=\"row3\"><td class=\"col1\">1<\/td><td class=\"col2\">2<\/td><\/tr>\n'))",
     "status": "fail",
-    "time": 0.00190782546997,
+    "time": 0.00182509422302,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -1340,7 +1340,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/html\/test_html_table\/1.html\" ('tags\/html\/test_html_table\/data.json', 'Test', '{% tablerow n in numbers cols:3%} {{n}} {% endtablerow %}', array(array(array(1, 2, 3, 4, 5, 6)), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n'))",
     "status": "fail",
-    "time": 0.00158905982971,
+    "time": 0.00161504745483,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -1366,7 +1366,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/html\/test_html_table\/2.html\" ('tags\/html\/test_html_table\/data.json', 'Test', '{% tablerow n in numbers cols:3%} {{n}} {% endtablerow %}', array(array(array()), '<tr class=\"row1\">\n<\/tr>\n'))",
     "status": "fail",
-    "time": 0.00165319442749,
+    "time": 0.00154709815979,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -1392,7 +1392,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/html\/test_html_table_with_different_cols\/1.html\" ('tags\/html\/test_html_table_with_different_cols\/data.json', 'Test', '{% tablerow n in numbers cols:5%} {{n}} {% endtablerow %}', array(array(array(1, 2, 3, 4, 5, 6)), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><td class=\"col4\"> 4 <\/td><td class=\"col5\"> 5 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 6 <\/td><\/tr>\n'))",
     "status": "fail",
-    "time": 0.00158977508545,
+    "time": 0.00155305862427,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -1418,7 +1418,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/html\/test_offset_and_limit\/1.html\" ('tags\/html\/test_offset_and_limit\/data.json', 'Test', '{% tablerow n in numbers cols:3 offset:1 limit:6%} {{n}} {% endtablerow %}', array(array(array(0, 1, 2, 3, 4, 5, 6, 7)), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n'))",
     "status": "fail",
-    "time": 0.00203394889832,
+    "time": 0.00191211700439,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -1444,7 +1444,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/html\/test_quoted_fragment\/1.html\" ('tags\/html\/test_quoted_fragment\/data.json', 'Test', '{% tablerow n in collections.frontpage cols:3%} {{n}} {% endtablerow %}', array(array(array(array(1, 2, 3, 4, 5, 6))), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n'))",
     "status": "fail",
-    "time": 0.00183606147766,
+    "time": 0.00184106826782,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",
@@ -1470,7 +1470,7 @@
     "suite": "TwigLiquidTest::testAdd",
     "test": "TwigLiquidTest::testAdd with data set \"tags\/html\/test_quoted_fragment2\/1.html\" ('tags\/html\/test_quoted_fragment2\/data.json', 'Test', '{% tablerow n in collections[\\'frontpage\\'] cols:3%} {{n}} {% endtablerow %}', array(array(array(array(1, 2, 3, 4, 5, 6))), '<tr class=\"row1\">\n<td class=\"col1\"> 1 <\/td><td class=\"col2\"> 2 <\/td><td class=\"col3\"> 3 <\/td><\/tr>\n<tr class=\"row2\"><td class=\"col1\"> 4 <\/td><td class=\"col2\"> 5 <\/td><td class=\"col3\"> 6 <\/td><\/tr>\n'))",
     "status": "fail",
-    "time": 0.00195407867432,
+    "time": 0.00200510025024,
     "trace": [
         {
             "file": "\/Users\/dad\/polygot-template-tests\/Loaders\/twig\/Base.php",

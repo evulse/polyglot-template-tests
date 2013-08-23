@@ -7,7 +7,7 @@ require "liquid"
 
    polygotTests = []
 
-   Dir["#{File.dirname(__FILE__)}/../../test/**/*.json"].each { |f|
+   Dir["#{File.dirname(__FILE__)}/../../test/Liquid/**/*.json"].each { |f|
      dataFile = File.open(f, "rb")
      data = JSON.parse(dataFile.read)
      data.to_enum.with_index(1) { |d, i|

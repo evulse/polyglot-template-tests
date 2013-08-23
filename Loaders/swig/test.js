@@ -4,7 +4,7 @@ var swig = require('swig'), assert = require("assert"), dir = require('node-dir'
 describe('Liquid', function(){
 
     before(function(done){
-        dir.readFiles('../../test/', {
+        dir.readFiles('../../test/Liquid', {
             match: /.json$/
         }, function(err, content, filename, next) {
             var tests = JSON.parse(content);
